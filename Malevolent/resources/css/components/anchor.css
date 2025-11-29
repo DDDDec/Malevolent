@@ -1,0 +1,9 @@
+.link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color);
+}
+.link:hover {
+    color: var(--color-two);
+    background: var(--background-color-two);
+}

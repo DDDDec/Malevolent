@@ -1,7 +1,20 @@
-@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Assistant:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@import '../css/components/root.css';
+@import '../css/components/anchor.css';
 @import '../css/components/background.css';
+@import '../css/components/border.css';
+@import '../css/components/default.css';
+@import '../css/components/flex.css';
+@import '../css/components/font.css';
+@import '../css/components/grid.css';
+@import '../css/components/image.css';
+@import '../css/components/import.css';
+@import '../css/components/list.css';
+@import '../css/components/margin.css';
+@import '../css/components/padding.css';
+@import '../css/components/root.css';
+@import '../css/components/transition.css';
+@import '../css/components/width.css';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';

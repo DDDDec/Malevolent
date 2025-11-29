@@ -1,3 +1,26 @@
 :root {
     --background-color: #1f2333;
+    --background-color-two: #3b82f612;
+
+    --border-color: #ffffff1c;
+
+    --border-radius: 10px;
+
+    --padding: 0;
+    --padding-two: 1rem;
+    --padding-three: 1.5rem;
+
+    --margin: 0;
+    --margin-0-auto: 0 auto;
+
+    --transition: 0.1s;
+
+    --font-family: 'Poppins', sans-serif;
+
+    --font-size: 1rem;
+
+    --color: #ffffff;
+    --color-two: #599bfa;
+
+    --font-weight-six-hundred: 600;
 }

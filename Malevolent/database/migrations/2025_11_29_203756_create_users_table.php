@@ -17,6 +17,12 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->unsignedBigInteger('money')->default(config('malevolent.settings.users.default_money'));
+            $table->tinyInteger('rank')->default(config('malevolent.settings.users.default_rank'));
+            $table->tinyInteger('prestige')->default(config('malevolent.settings.users.default_prestige'));
+            $table->smallInteger('level')->default(config('malevolent.settings.users.default_level'));
+            $table->string('language')->default(config('malevolent.settings.users.default_language'));
+            $table->boolean('banned')->default(false);
             $table->rememberToken();
             $table->timestamps();
         });

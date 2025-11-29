@@ -1,0 +1,6 @@
+.margin {
+    margin: var(--margin);
+}
+.margin-0-auto {
+    margin: var(--margin-0-auto);
+}

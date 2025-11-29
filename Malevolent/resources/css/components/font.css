@@ -1,0 +1,11 @@
+.font-family {
+    font-family: var(--font-family);
+}
+
+.font-size {
+    font-size: var(--font-size);
+}
+
+.font-weight-six-hundred {
+    font-weight: var(--font-weight-six-hundred);
+}

@@ -1,0 +1,9 @@
+.padding {
+    padding: var(--padding);
+}
+.padding-two {
+    padding: var(--padding-two);
+}
+.padding-three {
+    padding: var(--padding-three);
+}

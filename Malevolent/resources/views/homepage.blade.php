@@ -4,11 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{ config('app.name', 'Laravel') }} - Homepage</title>
+        <title>{{ config('app.name', 'Laravel') }} - {{ Route::currentRouteName() }}</title>
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @livewireStyles
     </head>
-    <body class="background">
+    <body class="background font-family padding margin">
 
+        <x-global.navigator/>
+
+        @livewireScripts
     </body>
 </html>
