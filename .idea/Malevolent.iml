@@ -121,6 +121,9 @@
       <excludeFolder url="file://$MODULE_DIR$/Malevolent/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/Malevolent/vendor/voku/portable-ascii" />
       <excludeFolder url="file://$MODULE_DIR$/Malevolent/vendor/livewire/livewire" />
+      <excludeFolder url="file://$MODULE_DIR$/Malevolent/vendor/intervention/gif" />
+      <excludeFolder url="file://$MODULE_DIR$/Malevolent/vendor/intervention/image" />
+      <excludeFolder url="file://$MODULE_DIR$/Malevolent/vendor/laravolt/avatar" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

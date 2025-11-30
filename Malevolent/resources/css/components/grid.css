@@ -2,6 +2,10 @@
     display: grid;
 }
 
+.grid-one-column {
+    display: grid;
+    grid-template-columns: auto;
+}
 .grid-two-columns {
     display: grid;
     grid-template-columns: repeat(2, auto);

@@ -130,6 +130,9 @@
       <path value="$PROJECT_DIR$/Malevolent/vendor/symfony/http-foundation" />
       <path value="$PROJECT_DIR$/Malevolent/vendor/symfony/uid" />
       <path value="$PROJECT_DIR$/Malevolent/vendor/livewire/livewire" />
+      <path value="$PROJECT_DIR$/Malevolent/vendor/laravolt/avatar" />
+      <path value="$PROJECT_DIR$/Malevolent/vendor/intervention/gif" />
+      <path value="$PROJECT_DIR$/Malevolent/vendor/intervention/image" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
