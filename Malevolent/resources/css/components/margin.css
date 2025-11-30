@@ -7,3 +7,16 @@
 .margin-top {
     margin-top: 25px;
 }
+.margin-minus-top {
+    margin-top: -4px;
+}
+.margin-left {
+    margin-left: 40px;
+}
+.margin-top-two {
+    margin-top: 5px;
+}
+
+.margin-bottom {
+    margin-bottom: 0;
+}

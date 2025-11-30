@@ -58,7 +58,7 @@ return [
     'responsive' => false,
 
     // Number of characters used as initials. If name consists of single word, the first N character will be used
-    'chars' => 2,
+    'chars' => 3,
 
     // font size
     'fontSize' => 48,
@@ -131,21 +131,7 @@ return [
         ],
         'colorful' => [
             'backgrounds' => [
-                '#f44336',
-                '#E91E63',
-                '#9C27B0',
-                '#673AB7',
-                '#3F51B5',
-                '#2196F3',
-                '#03A9F4',
-                '#00BCD4',
-                '#009688',
-                '#4CAF50',
-                '#8BC34A',
-                '#CDDC39',
-                '#FFC107',
-                '#FF9800',
-                '#FF5722',
+                '#599bfa',
             ],
             'foregrounds' => ['#FFFFFF'],
         ],
