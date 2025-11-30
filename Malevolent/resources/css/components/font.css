@@ -12,6 +12,9 @@
 .font-weight-six-hundred {
     font-weight: var(--font-weight-six-hundred);
 }
+.font-weight-normal {
+    font-weight: normal;
+}
 
 .font-color {
     color: var(--color);
@@ -21,4 +24,8 @@
 }
 .font-color-three {
     color: var(--color-three);
+}
+
+.font-align-center {
+    text-align: center;
 }

@@ -7,3 +7,6 @@
 .flex-justify-start {
     justify-content: flex-start;
 }
+.flex-justify-center {
+    justify-content: center;
+}

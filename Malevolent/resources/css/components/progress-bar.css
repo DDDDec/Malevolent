@@ -1,0 +1,8 @@
+::-webkit-progress-bar {
+    background-color: var(--background-color-four);
+    border-radius: var(--border-radius-three);
+}
+::-webkit-progress-value {
+    background-color: var(--color-two);
+    border-radius: var(--border-radius-three);
+}

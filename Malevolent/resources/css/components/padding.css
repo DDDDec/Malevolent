@@ -10,3 +10,12 @@
 .padding-four {
     padding: var(--padding-four);
 }
+.padding-five {
+    padding: var(--padding-five);
+}
+.padding-six {
+    padding: var(--padding-six);
+}
+.padding-seven {
+    padding: var(--padding-seven);
+}

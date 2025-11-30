@@ -1,8 +1,8 @@
 <nav class="border-bottom border-color padding-two">
-    <div class="margin-0-auto width-max-1200px position-relative">
-        <ul class="grid two-columns">
+    <div class="margin-0-auto width-max-1200px position-relative z-index-two">
+        <ul class="grid grid-two-columns padding margin">
 
-            <section class="flex flex-justify-start">
+            <div class="flex flex-justify-start">
                 <li class="list">
                     <a class="link transition font-weight-six-hundred padding-three border-radius">
                         Homepage &nbsp;
@@ -75,9 +75,9 @@
                         </a>
                     </div>
                 </li>
-            </section>
+            </div>
 
-            <section class="flex flex-justify-end">
+            <div class="flex flex-justify-end">
                 <li class="list">
                     <a class="link transition font-weight-six-hundred padding-three border-radius" href="{{ route('Homepage') }}" wire:navigate>
                         Account &nbsp;
@@ -100,7 +100,7 @@
                         </a>
                     </div>
                 </li>
-            </section>
+            </div>
 
         </ul>
     </div>

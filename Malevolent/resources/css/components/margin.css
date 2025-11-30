@@ -4,3 +4,6 @@
 .margin-0-auto {
     margin: var(--margin-0-auto);
 }
+.margin-top {
+    margin-top: 25px;
+}

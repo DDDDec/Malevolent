@@ -15,6 +15,23 @@
         <div class="background-image width-100-percent position-absolute position-top height z-index background-image-cover mask-image opacity"></div>
 
         <x-global.navigator/>
+        <x-global.header/>
+
+        <div class="margin-0-auto width-max-1200px">
+            <div class="grid-two-columns-twofr-onefr grid-gap-two">
+                <div>
+
+                    <x-content.homepage.servers/>
+
+                </div>
+                <div>
+
+                    <x-content.homepage.user-activity/>
+                    <x-content.homepage.server-activity/>
+
+                </div>
+            </div>
+        </div>
 
         @livewireScripts
     </body>

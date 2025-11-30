@@ -1,6 +1,12 @@
 .border-radius {
     border-radius: var(--border-radius);
 }
+.border-radius-two {
+    border-radius: var(--border-radius-two);
+}
+.border-radius-three {
+    border-radius: var(--border-radius-three);
+}
 
 .border {
     border: 1px solid var(--border-color);

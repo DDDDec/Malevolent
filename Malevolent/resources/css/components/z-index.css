@@ -1,3 +1,6 @@
 .z-index {
     z-index: var(--z-index);
 }
+.z-index-two {
+    z-index: var(--z-index-two);
+}

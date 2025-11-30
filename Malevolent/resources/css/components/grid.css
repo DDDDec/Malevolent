@@ -2,7 +2,26 @@
     display: grid;
 }
 
-.two-columns {
+.grid-two-columns {
     display: grid;
     grid-template-columns: repeat(2, auto);
 }
+.grid-four-columns {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+
+.grid-gap {
+    gap: var(--grid-gap);
+}
+.grid-gap-two {
+    gap: var(--grid-gap-two);
+}
+
+.grid-two-columns-twofr-onefr {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+
+
