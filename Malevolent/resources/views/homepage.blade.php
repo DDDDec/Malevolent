@@ -7,9 +7,12 @@
         <title>{{ config('app.name', 'Laravel') }} - {{ Route::currentRouteName() }}</title>
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+
         @livewireStyles
     </head>
     <body class="background font-family padding margin">
+
+        <div class="background-image width-100-percent position-absolute position-top height z-index background-image-cover mask-image opacity"></div>
 
         <x-global.navigator/>
 

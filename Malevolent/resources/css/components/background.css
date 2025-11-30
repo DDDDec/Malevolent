@@ -1,3 +1,6 @@
 .background {
     background: var(--background-color);
 }
+.background-color-three {
+    background: var(--background-color-three);
+}

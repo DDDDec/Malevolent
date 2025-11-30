@@ -2,8 +2,26 @@
     display: inline-block;
     text-decoration: none;
     color: var(--color);
+    cursor: pointer;
 }
 .link:hover {
     color: var(--color-two);
     background: var(--background-color-two);
+}
+.link:hover i {
+    transform: rotate(180deg);
+}
+
+.link-two {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color);
+    cursor: pointer;
+}
+.link-two:hover {
+    color: var(--color-two);
+    background: var(--background-color-two);
+}
+.link-two:hover i {
+    transform: rotate(0deg);
 }

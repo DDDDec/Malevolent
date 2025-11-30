@@ -1,0 +1,11 @@
+.background-image {
+    background: var(--background-image);
+}
+
+.background-image-cover {
+    background-size: cover;
+}
+
+.mask-image {
+    mask-image: var(--mask-image);
+}

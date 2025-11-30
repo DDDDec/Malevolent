@@ -1,14 +1,27 @@
 :root {
     --background-color: #1f2333;
     --background-color-two: #3b82f612;
+    --background-color-three: #2e3343;
+
+    --height: calc(80vh);
+
+    --background-image: url(../images/header.webp) center center no-repeat;
 
     --border-color: #ffffff1c;
+    --border-color-two: #393e4e;
+
+    --z-index: -1;
+
+    --mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+
+    --opacity: 0.2;
 
     --border-radius: 10px;
 
     --padding: 0;
     --padding-two: 1rem;
     --padding-three: 1.5rem;
+    --padding-four: 0.5rem 0.75rem 0.5rem 0.75rem;
 
     --margin: 0;
     --margin-0-auto: 0 auto;
@@ -18,9 +31,11 @@
     --font-family: 'Poppins', sans-serif;
 
     --font-size: 1rem;
+    --font-size-two: 0.9rem;
 
     --color: #ffffff;
     --color-two: #599bfa;
+    --color-three: #ffffffcc;
 
     --font-weight-six-hundred: 600;
 }

@@ -5,7 +5,20 @@
 .font-size {
     font-size: var(--font-size);
 }
+.font-size-two {
+    font-size: var(--font-size-two);
+}
 
 .font-weight-six-hundred {
     font-weight: var(--font-weight-six-hundred);
+}
+
+.font-color {
+    color: var(--color);
+}
+.font-color-two {
+    color: var(--color-two);
+}
+.font-color-three {
+    color: var(--color-three);
 }

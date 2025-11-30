@@ -2,3 +2,6 @@
     list-style: none;
     display: inline-block;
 }
+.list:hover .display-none {
+    display: block;
+}
