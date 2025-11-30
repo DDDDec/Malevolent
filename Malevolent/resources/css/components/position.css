@@ -2,6 +2,14 @@
     position: absolute;
 }
 
+.position-relative {
+    position: relative;
+}
+
 .position-top {
     top: 0;
+}
+
+.position-right {
+    right: 0;
 }
