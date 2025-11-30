@@ -21,9 +21,7 @@
             <div class="grid-two-columns-threefr-onefr grid-gap-two">
                 <div>
 
-                    <x-content.homepage.servers/>
-                    <x-content.homepage.server-features/>
-                    <x-content.homepage.server-statistics/>
+                    <x-content.community.round-leaderboard/>
 
                 </div>
                 <div>

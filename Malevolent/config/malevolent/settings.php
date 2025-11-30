@@ -8,8 +8,4 @@ return [
         'default_level' => 1,
         'default_language' => 'en'
     ],
-
-    'server' => [
-        'maintenance' => true
-    ]
 ];

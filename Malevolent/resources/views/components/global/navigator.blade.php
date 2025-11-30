@@ -27,13 +27,13 @@
                 </li>
 
                 <li class="list">
-                    <a class="link transition font-weight-six-hundred padding-three border-radius" href="{{ route('Homepage') }}" wire:navigate>
+                    <a class="link transition font-weight-six-hundred padding-three border-radius">
                         Community &nbsp;
                         <i class="fa-solid fa-angle-up transition"></i>
                     </a>
 
                     <div class="background-color-three display-none border-two border-radius position-absolute overflow-hidden">
-                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Homepage') }}" wire:navigate>
+                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Round Leaderboards') }}" wire:navigate>
                             <i class="fa-solid fa-chart-simple"></i>
                             &nbsp;&nbsp;Round Leaderboard
                         </a>
@@ -54,7 +54,7 @@
                 </li>
 
                 <li class="list">
-                    <a class="link transition font-weight-six-hundred padding-three border-radius" href="{{ route('Homepage') }}" wire:navigate>
+                    <a class="link transition font-weight-six-hundred padding-three border-radius">
                         Store &nbsp;
                         <i class="fa-solid fa-angle-up transition"></i>
                     </a>
@@ -79,7 +79,7 @@
 
             <div class="flex flex-justify-end">
                 <li class="list">
-                    <a class="link transition font-weight-six-hundred padding-three border-radius" href="{{ route('Homepage') }}" wire:navigate>
+                    <a class="link transition font-weight-six-hundred padding-three border-radius">
                         Account &nbsp;
                         <i class="fa-solid fa-angle-up transition"></i>
                     </a>

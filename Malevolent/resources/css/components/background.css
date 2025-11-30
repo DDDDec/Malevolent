@@ -1,6 +1,15 @@
 .background {
     background: var(--background-color);
 }
+.background-color-two {
+    background: var(--background-color-two);
+}
 .background-color-three {
     background: var(--background-color-three);
+}
+.background-color-four {
+    background: var(--background-color-four);
+}
+.background-color-five {
+    background: var(--background-color-five);
 }

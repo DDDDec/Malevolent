@@ -22,7 +22,7 @@
     gap: var(--grid-gap-two);
 }
 
-.grid-two-columns-twofr-onefr {
+.grid-two-columns-threefr-onefr {
     display: grid;
     grid-template-columns: 3fr 1fr;
 }

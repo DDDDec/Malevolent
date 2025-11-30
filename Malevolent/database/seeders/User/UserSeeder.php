@@ -13,10 +13,10 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        $users = config('malevolent.seeder.users', []);
+        $users = config('malevolent.seeders.user', []);
 
         if (empty($users)) {
-            $this->command->warn('No users found in malevolent/seeder.php');
+            $this->command->warn('No users found in \'config/malevolent/seeder.php\'');
             return;
         }
 

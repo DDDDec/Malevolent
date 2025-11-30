@@ -11,9 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('server_settings', function (Blueprint $table) {
+        Schema::create('user_actions', function (Blueprint $table) {
             $table->id();
-            $table->boolean('maintenance')->default(config('malevolent.settings.server.maintenance'));;
+            $table->foreignId('user_id')->constrained();
+            $table->string('user_name');
+            $table->string('user_action');
             $table->timestamps();
         });
     }
@@ -23,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('server_settings');
+        Schema::dropIfExists('user_actions');
     }
 };
