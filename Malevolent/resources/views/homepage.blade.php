@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,31 +12,33 @@
     </head>
     <body class="background font-family padding margin">
 
-        <div class="background-image width-100-percent position-absolute position-top height z-index background-image-cover mask-image opacity"></div>
+    <div
+        class="background-image width-100-percent position-absolute position-top height z-index background-image-cover mask-image opacity"></div>
 
-        <x-global.navigator/>
-        <x-global.header/>
+    <x-global.navigator/>
+    <x-global.header/>
 
-        <div class="margin-0-auto width-max-1200px">
-            <div class="grid grid-two-columns-threefr-onefr grid-gap-two">
-                <div>
+    <div class="margin-0-auto width-max-1200px">
+        <div class="grid grid-two-columns-three-fr-one-fr grid-gap-two">
+            <div>
 
-                    <x-content.homepage.servers/>
-                    <x-content.homepage.server-features/>
-                    <x-content.homepage.server-statistics/>
+                <x-content.homepage.servers/>
+                <x-content.homepage.server-features/>
+                <x-content.homepage.server-statistics/>
 
-                </div>
-                <div>
+            </div>
+            <div>
 
-                    <x-content.homepage.user-activity/>
-                    <x-content.homepage.server-activity/>
+                <x-content.homepage.user-activity/>
+                <x-content.homepage.server-activity/>
 
-                </div>
             </div>
         </div>
+    </div>
 
-        <x-global.footer/>
+    <x-global.footer/>
 
-        @livewireScripts
+    @livewireScripts
     </body>
-</html>
+    </html>
+</>

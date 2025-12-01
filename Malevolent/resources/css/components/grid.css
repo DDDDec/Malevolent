@@ -28,7 +28,7 @@
     gap: var(--grid-gap-four);
 }
 
-.grid-two-columns-threefr-onefr {
+.grid-two-columns-three-fr-one-fr {
     grid-template-columns: 3fr 1fr;
 }
 

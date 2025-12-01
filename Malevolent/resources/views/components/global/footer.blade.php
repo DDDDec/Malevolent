@@ -11,13 +11,13 @@
             <a href="https://forum.plutonium.pw" target="_blank" class="font-color display-inline-block padding-two margin-top background-color-six border-radius width font-weight-six-hundred link-two transition">
                 <i class="fa-solid fa-atom font-size-three position-absolute"></i>
                 <div class="margin-left">
-                    Plutonium
+                    Plutonium Forum
                 </div>
             </a>
             <a href="https://cdn.plutonium.pw/updater/plutonium.exe" target="_blank" class="font-color display-inline-block padding-two margin-top background-color-six border-radius width font-weight-six-hundred link-two transition">
                 <i class="fa-solid fa-atom font-size-three position-absolute"></i>
                 <div class="margin-left">
-                    Download
+                    Download Client
                 </div>
             </a>
         </div>

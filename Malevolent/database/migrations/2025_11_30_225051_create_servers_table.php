@@ -20,6 +20,10 @@ return new class extends Migration
             $table->string('server_players')->nullable();
             $table->string('server_password')->nullable();
             $table->boolean('server_maintenance')->default(true);
+            $table->unsignedBigInteger('server_kills')->default(0)->index();
+            $table->unsignedBigInteger('server_downs')->default(0)->index();
+            $table->unsignedBigInteger('server_revives')->default(0)->index();
+            $table->unsignedBigInteger('server_headshots')->default(0)->index();
             $table->timestamps();
         });
     }

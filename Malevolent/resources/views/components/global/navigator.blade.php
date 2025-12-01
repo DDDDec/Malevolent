@@ -42,7 +42,7 @@
                     </a>
 
                     <div class="background-color-three display-none border-two border-radius position-absolute overflow-hidden">
-                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Round Leaderboards') }}" wire:navigate>
+                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Homepage') }}" wire:navigate>
                             <i class="fa-solid fa-chart-simple"></i>
                             &nbsp;&nbsp;Round Leaderboard
                         </a>
@@ -58,6 +58,29 @@
                         <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Homepage') }}" wire:navigate>
                             <i class="fa-solid fa-magnifying-glass"></i>
                             &nbsp;&nbsp;Player Search
+                        </a>
+                    </div>
+                </li>
+
+                <li class="list">
+                    <a class="link transition font-weight-six-hundred padding-three border-radius">
+                        Support &nbsp;
+                        <i class="fa-solid fa-angle-up transition"></i>
+                    </a>
+
+                    <div class="background-color-three display-none border-two border-radius position-absolute overflow-hidden">
+                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Homepage') }}" wire:navigate>
+                            <i class="fa-solid fa-phone"></i>
+                            &nbsp;&nbsp;Support Tickets
+                        </a>
+                        <div class="border"></div>
+                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Homepage') }}" wire:navigate>
+                            <i class="fa-solid fa-book"></i>
+                            &nbsp;&nbsp;Commands Booklet
+                        </a>
+                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Homepage') }}" wire:navigate>
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            &nbsp;&nbsp;Server Guides
                         </a>
                     </div>
                 </li>
@@ -94,11 +117,11 @@
                     </a>
 
                     <div class="background-color-three display-none border-two border-radius position-absolute overflow-hidden position-right">
-                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Homepage') }}" wire:navigate>
+                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Login') }}" wire:navigate>
                             <i class="fa-solid fa-arrow-right-to-bracket"></i>
                             &nbsp;&nbsp;Login
                         </a>
-                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Homepage') }}" wire:navigate>
+                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Register') }}" wire:navigate>
                             <i class="fa-solid fa-user-plus"></i>
                             &nbsp;&nbsp;Register
                         </a>

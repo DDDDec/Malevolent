@@ -18,18 +18,15 @@
         <x-global.header/>
 
         <div class="margin-0-auto width-max-1200px">
-            <div class="grid grid-two-columns-threefr-onefr grid-gap-two">
+            <div class="grid grid-two-columns-three-fr-one-fr grid-gap-two">
                 <div>
 
-                    <x-content.homepage.servers/>
-                    <x-content.homepage.server-features/>
-                    <x-content.homepage.server-statistics/>
+                    <x-content.auth.register/>
 
                 </div>
                 <div>
 
-                    <x-content.homepage.user-activity/>
-                    <x-content.homepage.server-activity/>
+                    <x-content.auth.register-terms/>
 
                 </div>
             </div>
