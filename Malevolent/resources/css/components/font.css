@@ -8,6 +8,12 @@
 .font-size-two {
     font-size: var(--font-size-two);
 }
+.font-size-three {
+    font-size: var(--font-size-three);
+}
+.font-size-four {
+    font-size: var(--font-size-four);
+}
 
 .font-weight-six-hundred {
     font-weight: var(--font-weight-six-hundred);

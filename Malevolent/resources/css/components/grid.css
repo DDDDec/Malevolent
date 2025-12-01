@@ -3,15 +3,15 @@
 }
 
 .grid-one-column {
-    display: grid;
     grid-template-columns: auto;
 }
 .grid-two-columns {
-    display: grid;
     grid-template-columns: repeat(2, auto);
 }
+.grid-three-columns {
+    grid-template-columns: repeat(3, auto);
+}
 .grid-four-columns {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
@@ -21,9 +21,14 @@
 .grid-gap-two {
     gap: var(--grid-gap-two);
 }
+.grid-gap-three {
+    gap: var(--grid-gap-three);
+}
+.grid-gap-four {
+    gap: var(--grid-gap-four);
+}
 
 .grid-two-columns-threefr-onefr {
-    display: grid;
     grid-template-columns: 3fr 1fr;
 }
 

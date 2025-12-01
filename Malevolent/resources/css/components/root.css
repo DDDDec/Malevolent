@@ -4,6 +4,7 @@
     --background-color-three: #2e3343;
     --background-color-four: #a7a7a70d;
     --background-color-five: #599bfa;
+    --background-color-six: #a7a7a70d;
 
     --height: calc(80vh);
 
@@ -46,6 +47,8 @@
 
     --font-size: 1rem;
     --font-size-two: 0.9rem;
+    --font-size-three: 1.5rem;
+    --font-size-four: 1.2rem;
 
     --color: #ffffff;
     --color-two: #599bfa;
@@ -55,4 +58,6 @@
 
     --grid-gap: 15px;
     --grid-gap-two: 25px;
+    --grid-gap-three: 5px;
+    --grid-gap-four: 162px;
 }

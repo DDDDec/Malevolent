@@ -1,5 +1,5 @@
-<div class="border padding-two box-sizing-border-box border-radius margin-top grid-two-columns grid-gap">
-    <div class="padding-seven background-color-three border-radius border">
+<div class="border padding-two box-sizing-border-box border-radius margin-top grid grid-two-columns grid-gap">
+    <div class="padding-seven background-color-six border-radius border">
         <div class="font-color font-weight-six-hundred">
             <div>
                 <i class="fa-solid fa-hammer background-color-five padding-two border-radius"></i> &nbsp;&nbsp;&nbsp;Staff Management
@@ -9,7 +9,7 @@
             </div>
         </div>
     </div>
-    <div class="padding-seven background-color-three border-radius border">
+    <div class="padding-seven background-color-six border-radius border">
         <div class="font-color font-weight-six-hundred">
             <div>
                 <i class="fa-solid fa-hammer background-color-five padding-two border-radius"></i> &nbsp;&nbsp;&nbsp;Staff Management
@@ -19,7 +19,7 @@
             </div>
         </div>
     </div>
-    <div class="padding-seven background-color-three border-radius border">
+    <div class="padding-seven background-color-six border-radius border">
         <div class="font-color font-weight-six-hundred">
             <div>
                 <i class="fa-solid fa-hammer background-color-five padding-two border-radius"></i> &nbsp;&nbsp;&nbsp;Staff Management
@@ -29,7 +29,7 @@
             </div>
         </div>
     </div>
-    <div class="padding-seven background-color-three border-radius border">
+    <div class="padding-seven background-color-six border-radius border">
         <div class="font-color font-weight-six-hundred">
             <div>
                 <i class="fa-solid fa-hammer background-color-five padding-two border-radius"></i> &nbsp;&nbsp;&nbsp;Staff Management
