@@ -25,3 +25,6 @@
 .padding-nine {
     padding: var(--padding-nine);
 }
+.padding-ten {
+    padding: var(--padding-ten);
+}

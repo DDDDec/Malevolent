@@ -1,6 +1,9 @@
 .background-image {
     background: var(--background-image);
 }
+.background-image-two {
+    background: var(--background-image-two);
+}
 
 .background-image-cover {
     background-size: cover;
@@ -8,4 +11,7 @@
 
 .mask-image {
     mask-image: var(--mask-image);
+}
+.mask-image-two {
+    mask-image: var(--mask-image-two);
 }

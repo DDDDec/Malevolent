@@ -35,6 +35,8 @@
             </div>
         </div>
 
+        <x-global.footer/>
+
         @livewireScripts
     </body>
 </html>
