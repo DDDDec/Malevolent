@@ -2,7 +2,7 @@
 
 return [
     'user' => [
-        ['id' => 3390756, 'name' => "Dec", 'email' => 'dec@malevolent.website', 'password' => 'weston123']
+        ['id' => 3390756, 'name' => 'Dec', 'email' => 'dec@malevolent.website', 'password' => 'weston123']
     ],
 
     'server' => [
@@ -13,7 +13,7 @@ return [
         ['server_ip' => '127.0.0.1', 'server_port' => '4981']
     ],
 
-    'useraction' => [
+    'user-action' => [
         ['user_id' => 3390756, 'user_name' => 'Dec', 'user_action' => 'Dec has just started playing on the Town server.'],
         ['user_id' => 3390756, 'user_name' => 'Dec', 'user_action' => 'Dec has just started playing on the Nuketown server.'],
         ['user_id' => 3390756, 'user_name' => 'Dec', 'user_action' => 'Dec has just started playing on the Buried server.'],
@@ -21,7 +21,7 @@ return [
         ['user_id' => 3390756, 'user_name' => 'Dec', 'user_action' => 'Dec has just started playing on the Depot server.']
     ],
 
-    'serveraction' => [
+    'server-action' => [
         ['server_id' => 1, 'server_map' => 'Town', 'server_Action' => 'Town server has just started and is ready to play.'],
         ['server_id' => 2, 'server_map' => 'Nuketown', 'server_Action' => 'Nuketown server has just started and is ready to play.'],
         ['server_id' => 3, 'server_map' => 'Buried', 'server_Action' => 'Buried server has just started and is ready to play.'],

@@ -12,7 +12,7 @@ class ServerActionSeeder extends Seeder
      */
     public function run(): void
     {
-        $serverActions = config('malevolent.seeders.serveraction', []);
+        $serverActions = config('malevolent.seeders.server-action', []);
 
         if (empty($serverActions)) {
             $this->command->warn('No server actions found in \'config/malevolent/seeder.php\'');

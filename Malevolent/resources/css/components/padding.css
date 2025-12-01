@@ -19,3 +19,9 @@
 .padding-seven {
     padding: var(--padding-seven);
 }
+.padding-eight {
+    padding: var(--padding-eight);
+}
+.padding-nine {
+    padding: var(--padding-nine);
+}

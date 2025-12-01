@@ -12,7 +12,7 @@ class UserActionSeeder extends Seeder
      */
     public function run(): void
     {
-        $userActions = config('malevolent.seeders.useraction', []);
+        $userActions = config('malevolent.seeders.user-action', []);
 
         if (empty($userActions)) {
             $this->command->warn('No user actions found in \'config/malevolent/seeder.php\'');
