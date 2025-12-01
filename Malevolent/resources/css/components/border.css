@@ -30,3 +30,7 @@
 .border-two {
     border: 2px solid var(--border-color-two);
 }
+
+.border-none {
+    border: none;
+}

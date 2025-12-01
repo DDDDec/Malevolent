@@ -16,3 +16,6 @@
 .background-color-six {
     background: var(--background-color-six);
 }
+.background-none {
+    background: none;
+}
