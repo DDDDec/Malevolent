@@ -24,7 +24,7 @@ class AuthController extends Controller
 
         if (Auth::attempt($credentials, $request->filled('remember'))) {
             $request->session()->regenerate();
-            return redirect()->intended('/account');
+            return redirect()->intended('/profile');
         }
 
         return back()->withErrors(['login' => 'Login attempt failed. Please check your username and password.'])->onlyInput('name');
@@ -48,7 +48,7 @@ class AuthController extends Controller
         event(new Registered($user));
         Auth::login($user);
 
-        return redirect('/account');
+        return redirect('/profile');
     }
 
     public function logout(Request $request): RedirectResponse

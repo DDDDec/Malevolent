@@ -117,19 +117,35 @@
                     </a>
 
                     <div class="background-color-three display-none border-two border-radius position-absolute overflow-hidden position-right">
-                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Login') }}" wire:navigate>
-                            <i class="fa-solid fa-arrow-right-to-bracket"></i>
-                            &nbsp;&nbsp;Login
-                        </a>
-                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Register') }}" wire:navigate>
-                            <i class="fa-solid fa-user-plus"></i>
-                            &nbsp;&nbsp;Register
-                        </a>
-                        <div class="border"></div>
-                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Homepage') }}" wire:navigate>
-                            <i class="fa-solid fa-key"></i>
-                            &nbsp;&nbsp;Forgot Password
-                        </a>
+                        @if(Auth()->User())
+                            <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Profile') }}" wire:navigate>
+                                <i class="fa-solid fa-user"></i>
+                                &nbsp;&nbsp;Profile Page
+                            </a>
+                            <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Account') }}" wire:navigate>
+                                <i class="fa-solid fa-gear"></i>
+                                &nbsp;&nbsp;Account Settings
+                            </a>
+                            <div class="border"></div>
+                            <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('auth.logout') }}" wire:navigate>
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                &nbsp;&nbsp;Logout
+                            </a>
+                        @else
+                            <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Login') }}" wire:navigate>
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                &nbsp;&nbsp;Login
+                            </a>
+                            <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Register') }}" wire:navigate>
+                                <i class="fa-solid fa-user-plus"></i>
+                                &nbsp;&nbsp;Register
+                            </a>
+                            <div class="border"></div>
+                            <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Homepage') }}" wire:navigate>
+                                <i class="fa-solid fa-key"></i>
+                                &nbsp;&nbsp;Forgot Password
+                            </a>
+                        @endif
                     </div>
                 </li>
             </div>
