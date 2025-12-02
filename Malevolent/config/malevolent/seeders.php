@@ -2,7 +2,7 @@
 
 return [
     'user' => [
-        ['id' => 3390756, 'name' => 'Dec', 'email' => 'dec@malevolent.website', 'password' => 'weston123']
+        ['id' => 3390756, 'name' => 'Dec', 'email' => 'dec@malevolent.website', 'password' => 'password123']
     ],
 
     'server' => [
