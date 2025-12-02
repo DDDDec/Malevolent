@@ -17,10 +17,20 @@
 .margin-minus-top-three {
     margin-top: -2px;
 }
+.margin-minus-top-four {
+    margin-top: -6px;
+}
 
 .margin-left {
     margin-left: 40px;
 }
+.margin-left-two {
+    margin-left: 60px;
+}
+.margin-minus-left {
+    margin-left: -10px;
+}
+
 .margin-top-two {
     margin-top: 5px;
 }

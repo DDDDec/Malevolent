@@ -21,12 +21,13 @@
             <div class="grid grid-two-columns-three-fr-one-fr grid-gap-two">
                 <div>
 
-                    <x-content.account.register/>
+                    <x-content.community.search/>
+                    <x-content.community.user-recently-played/>
 
                 </div>
                 <div>
 
-                    <x-content.account.register-terms/>
+                    <x-content.homepage.user-activity/>
 
                 </div>
             </div>

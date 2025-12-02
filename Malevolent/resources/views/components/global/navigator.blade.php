@@ -55,7 +55,7 @@
                             &nbsp;&nbsp;Server Leaderboard
                         </a>
                         <div class="border"></div>
-                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Homepage') }}" wire:navigate>
+                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Search') }}" wire:navigate>
                             <i class="fa-solid fa-magnifying-glass"></i>
                             &nbsp;&nbsp;Player Search
                         </a>
