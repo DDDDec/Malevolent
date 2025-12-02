@@ -46,29 +46,23 @@ utility_format_time(time)
 ///////////////////////////////////////////////////
 utility_get_map()
 {
-    location = getDvar( "ui_zm_mapstartlocation" );
-    gamemode = getDvar( "ui_gametype" );
-
-    if( location == "processing" )
-        return "Buried";
-    else if( location == "rooftop" )
-        return "DieRise";
-    else if( location == "prison" )
-        return "Prison";
-    else if( location == "nuked" )
-        return "Nuketown";
-    else if( location == "tomb" )
-        return "Origins";
-    else if( location == "town" )
-        return "Town";
-    else if( location == "farm" )
-        return "Farm";
-    else if( location == "transit" )
-        if ( gamemode == "zclassic")
-    	    return "Tranzit";
-        if ( gamemode == "zstandard")
-    	    return "Depot";
-    return "NA";
+    switch(getDvar("ui_zm_mapstartlocation"))
+    {
+        case "processing": return "Buried"; break;
+        case "rooftop": return "DieRise"; break;
+        case "prison": return "Prison"; break;
+        case "nuked": return "Nuketown"; break;
+        case "tomb": return "Origins"; break;
+        case "town": return "Town"; break;
+        case "farm": return "Farm"; break;
+        case "transit":
+            if (getDvar("ui_gametype") == "zclassic")
+        	    return "Tranzit";
+            else
+        	    return "Depot";
+            break;
+        default: return "NA";
+    }
 }
 
 ////////////////////////////////////////////
@@ -81,8 +75,7 @@ utility_format_number(num)
     strNum = num + "";
 
     len = 0;
-    while (strNum[len] != undefined)
-    {
+    while (strNum[len] != undefined) {
         len++;
     }
 
@@ -94,16 +87,13 @@ utility_format_number(num)
     if (firstGroupLen == 0)
         firstGroupLen = 3;
 
-    for (i = 0; i < firstGroupLen; i++)
-    {
+    for (i = 0; i < firstGroupLen; i++) {
         formatted += strNum[i];
     }
 
-    for (i = firstGroupLen; i < len; i += 3)
-    {
+    for (i = firstGroupLen; i < len; i += 3) {
         formatted += ",";
-        for (j = 0; j < 3; j++)
-        {
+        for (j = 0; j < 3; j++) {
             formatted += strNum[i + j];
         }
     }
