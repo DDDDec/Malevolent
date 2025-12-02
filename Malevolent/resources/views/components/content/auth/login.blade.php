@@ -1,6 +1,6 @@
 <div>
     <div class="border border-radius padding-two">
-        <form method="POST" action="">
+        <form method="POST" action="{{ route('auth.login') }}">
             @csrf
 
             <input type="text" name="name" placeholder="Please insert your username" class="width-100-percent border border-radius background-none padding-two box-sizing-border-box font-color font-weight-six-hundred font-family default-outline">
