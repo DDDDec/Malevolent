@@ -7,8 +7,8 @@
             <input type="password" name="password" placeholder="Please insert your password" class="width-100-percent border border-radius background-none padding-two box-sizing-border-box margin-top font-color font-weight-six-hundred font-family default-outline">
 
             <div class="checkbox margin-top font-color font-weight-six-hundred">
-                <input id="c1-13" name="remember" type="checkbox">
-                <label for="c1-13">Remember Me</label>
+                <input name="remember" type="checkbox">
+                <label>Remember Me</label>
             </div>
 
             <button type="submit" class="link transition width-100-percent border-none border-radius background-color-six padding-two box-sizing-border-box font-color font-weight-six-hundred font-family margin-top">Login</button>

@@ -5,37 +5,37 @@
                 <i class="fa-solid fa-hammer background-color-five padding-two border-radius"></i> &nbsp;&nbsp;&nbsp;Staff Management
             </div>
             <div class="margin-top-three font-weight-normal font-color-three font-size-two">
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+                Here at Malevolent we want to make sure that the game servers are moderated as much as possible to give the players the best experience possible.
             </div>
         </div>
     </div>
     <div class="padding-seven background-color-six border-radius border">
         <div class="font-color font-weight-six-hundred">
             <div>
-                <i class="fa-solid fa-hammer background-color-five padding-two border-radius"></i> &nbsp;&nbsp;&nbsp;Staff Management
+                <i class="fa-solid fa-chart-simple background-color-five padding-two border-radius"></i> &nbsp;&nbsp;&nbsp;Statistics
             </div>
             <div class="margin-top-three font-weight-normal font-color-three font-size-two">
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+                We collect all of the data through out your games so we can put them all together and show you them via your account and other places as well.
             </div>
         </div>
     </div>
     <div class="padding-seven background-color-six border-radius border">
         <div class="font-color font-weight-six-hundred">
             <div>
-                <i class="fa-solid fa-hammer background-color-five padding-two border-radius"></i> &nbsp;&nbsp;&nbsp;Staff Management
+                <i class="fa-solid fa-ranking-star background-color-five padding-two border-radius"></i> &nbsp;&nbsp;&nbsp;Leaderboards
             </div>
             <div class="margin-top-three font-weight-normal font-color-three font-size-two">
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+                We provide you with leaderboards like highest rounds, Highest statistics & Server statistics for your games so you can see who is the best player in your game.
             </div>
         </div>
     </div>
     <div class="padding-seven background-color-six border-radius border">
         <div class="font-color font-weight-six-hundred">
             <div>
-                <i class="fa-solid fa-hammer background-color-five padding-two border-radius"></i> &nbsp;&nbsp;&nbsp;Staff Management
+                <i class="fa-solid fa-terminal background-color-five padding-two border-radius"></i> &nbsp;&nbsp;&nbsp;Custom Commands
             </div>
             <div class="margin-top-three font-weight-normal font-color-three font-size-two">
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+                We have custom commands for gambling, account management, Education and many many more to make the game that little bit more fun.
             </div>
         </div>
     </div>

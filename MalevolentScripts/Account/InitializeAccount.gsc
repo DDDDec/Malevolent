@@ -19,10 +19,12 @@
 // Sorts the players account data            //
 ///////////////////////////////////////////////
 initialize_account() {
-    account = database_query("SELECT * FROM users WHERE id = ?", array(self.guid));
+    account = database_query("SELECT * FROM users WHERE id=?", array(self.guid));
 
     if (account[0].size == 0) {
-        // kick player if they don't have an account
+        database_query("INSERT INTO user_plutonium (`user_id`, `user_name`) VALUES (?, ?)", array(self.guid, self.name));
+        utility_kick_player("                                                                                                                                                                                                          [^5Malevolent^7] You are not ^5REGISTERED^7                                                                                                                                                            Register at ^5https://malevolent.website^7                                           [^5GUID^7]^5 " + self.guid + "^7       [^5Username^7] ^5" + self.name);
+        return;
     }
 
     if (int(account[0][0]["user_banned"]) == 1) {
