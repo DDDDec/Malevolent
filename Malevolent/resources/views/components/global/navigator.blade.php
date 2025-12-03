@@ -70,7 +70,7 @@
 
                     <div class="background-color-three display-none border-two border-radius position-absolute overflow-hidden">
                         <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Homepage') }}" wire:navigate>
-                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-solid fa-ticket"></i>
                             &nbsp;&nbsp;Support Tickets
                         </a>
                         <div class="border"></div>

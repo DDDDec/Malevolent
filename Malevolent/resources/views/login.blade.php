@@ -21,12 +21,12 @@
             <div class="grid grid-two-columns-three-fr-one-fr grid-gap-two">
                 <div>
 
-                    <x-content.account.login/>
+                    <x-content.auth.login/>
 
                 </div>
                 <div>
 
-                    <x-content.account.login-terms/>
+                    <x-content.auth.login-terms/>
 
                 </div>
             </div>

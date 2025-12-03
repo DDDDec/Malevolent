@@ -21,12 +21,15 @@
             <div class="grid grid-two-columns-three-fr-one-fr grid-gap-two">
                 <div>
 
-
+                    <x-content.account.avatar/>
+                    <x-content.account.missions/>
+                    <x-content.account.achievements/>
 
                 </div>
                 <div>
 
-
+                    <x-content.account.statistics/>
+                    <x-content.account.user-activity/>
 
                 </div>
             </div>

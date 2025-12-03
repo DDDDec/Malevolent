@@ -15,6 +15,15 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
+.grid-template-areas {
+    grid-template-areas: "one . . ."
+                         "one . . .";
+}
+
+.grid-area-one {
+    grid-area: one;
+}
+
 .grid-gap {
     gap: var(--grid-gap);
 }
