@@ -13,6 +13,12 @@
 #include scripts/zm/Account/InitializeAccount; //
 /////////////////////////////////////////////////
 
+/////////////////////////////////////////////////
+// Include Command Scripts                     //
+/////////////////////////////////////////////////
+#include scripts/zm/Chat/InitializeCommands;   //
+/////////////////////////////////////////////////
+
 ///////////////////////////////////////////////
 // Include Utility Scripts                   //
 ///////////////////////////////////////////////
@@ -24,10 +30,9 @@ init() {
     setDvar("g_password", "");
     setDvar("password", "");
 
-    level.perk_purchase_limit = 20;
-
     level thread initialize_player();
     level thread initialize_database();
+    level thread initialize_commands();
 }
 
 initialize_player() {
