@@ -124,8 +124,6 @@
       <excludeFolder url="file://$MODULE_DIR$/Malevolent/vendor/intervention/gif" />
       <excludeFolder url="file://$MODULE_DIR$/Malevolent/vendor/intervention/image" />
       <excludeFolder url="file://$MODULE_DIR$/Malevolent/vendor/laravolt/avatar" />
-      <excludeFolder url="file://$MODULE_DIR$/Malevolent/vendor/mokhosh/muddle" />
-      <excludeFolder url="file://$MODULE_DIR$/Malevolent/vendor/spatie/laravel-package-tools" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

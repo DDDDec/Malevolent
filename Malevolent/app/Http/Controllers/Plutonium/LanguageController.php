@@ -14,14 +14,13 @@ class LanguageController extends Controller
     {
         $key = $request->header('X-Api-Key');
         $user = $request->header('X-User-Id');
-        $server = $request->header('X-Server-Port');
+        $port = $request->header('X-Server-Port');
 
-        $language = $request->input('language');
-
-        if (!$key || !$user || !$server || !$language) {
+        if (!$key || !$user || !$port) {
             return "[^5Request^7] This request failed, please contact the server administrator.";
         }
 
-        return "";
+        $message = config('malevolent.language.'.$request->input('language'));
+        return $message[$request->input('language_id')];
     }
 }

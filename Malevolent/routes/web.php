@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\Plutonium\LanguageController;
+use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () { return view('homepage'); })->name('Homepage');;
@@ -15,3 +17,5 @@ Route::get('/auth/logout', [AuthController::class, 'logout'])->name('auth.logout
 
 Route::get('/profile', function () { return view('profile'); })->name('Profile');;
 Route::get('/account', function () { return view('account'); })->name('Account');;
+
+Route::post('/api/language', [LanguageController::class, 'handle'])->name('api.language')->withoutMiddleware([StartSession::class]);

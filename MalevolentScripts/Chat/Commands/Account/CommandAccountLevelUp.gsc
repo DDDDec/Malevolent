@@ -3,6 +3,7 @@
 ///////////////////////////////////////////////
 #include scripts/zm/Utility/Utility;         //
 #include scripts/zm/Utility/UtilityDatabase; //
+#include scripts/zm/Utility/UtilityRequest;  //
 ///////////////////////////////////////////////
 
 //////////////////////////////////////////
@@ -14,8 +15,13 @@ command_account_level_up(args)
 {
     account = database_query("SELECT * FROM users WHERE id=?", array(self.guid));
 
-    if (int(account[0][0]["user_level"]) == 1000) {
-        self tell("[]");
-        return;
-    }
+    headers = [];
+    headers["Content-Type"] = "application/json";
+
+    data = [];
+    data["language"] = "en";
+    data["language_id"] = 0;
+
+    message = utility_request(headers, data, "language");
+    self tell(message);
 }

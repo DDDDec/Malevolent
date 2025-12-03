@@ -1,11 +1,11 @@
 /////////////////////////////////////
-// Utility HTTP Request Function   //
+// Utility Request Function        //
 /////////////////////////////////////
 // Sends a HTTP request to a URL   //
 /////////////////////////////////////
-utility_http_request(headers, data, url)
+utility_request(headers, data, url)
 {
-    request = httpPost(url, jsonSerialize(data, 0), headers);
+    request = httpPost(getDvar("api_url") + url, jsonSerialize(data, 0), headers);
     request waittill("done", result);
     return result;
 }
