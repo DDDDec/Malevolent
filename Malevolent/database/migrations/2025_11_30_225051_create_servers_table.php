@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('server_ip');
             $table->integer('server_port')->unique();
-            $table->string('server_map')->default('Town');
+            $table->string('server_map')->default('Nuketown');
             $table->string('server_round')->default(0)->index();
             $table->string('server_players')->nullable();
             $table->integer('server_players_count')->default(0);

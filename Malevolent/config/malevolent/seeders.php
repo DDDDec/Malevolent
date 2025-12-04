@@ -6,7 +6,14 @@ return [
     ],
 
     'server' => [
-        ['server_ip' => '31.104.244.36', 'server_port' => '4977']
+        ['server_ip' => '127.0.0.1', 'server_port' => '4977'],
+        ['server_ip' => '127.0.0.1', 'server_port' => '4978'],
+        ['server_ip' => '127.0.0.1', 'server_port' => '4979'],
+        ['server_ip' => '127.0.0.1', 'server_port' => '4980'],
+        ['server_ip' => '127.0.0.1', 'server_port' => '4981'],
+        ['server_ip' => '127.0.0.1', 'server_port' => '4982'],
+        ['server_ip' => '127.0.0.1', 'server_port' => '4983'],
+        ['server_ip' => '127.0.0.1', 'server_port' => '4984']
     ],
 
     'user-action' => [

@@ -24,15 +24,15 @@
     </div>
     <div class="padding-four background-color-six border-radius border">
         <div class="font-size-two font-color-three">Last Played</div>
-        <div class="font-weight-six-hundred font-color">{{ \Carbon\Carbon::parse(Auth()->User()->updated_at)->diffForHumans() }}</div>
+        <div class="font-weight-six-hundred font-color">{{ Auth()->User()->format_created_at }}</div>
     </div>
     <div class="padding-four background-color-six border-radius border">
-        <div class="font-size-two font-color-three">Email</div>
-        <div class="font-weight-six-hundred font-color">{{ str_pad(strrchr(Auth()->User()->email, '@'), strlen(Auth()->User()->email), "*", STR_PAD_LEFT) }}</div>
+        <div class="font-size-two font-color-three">Bank Balance</div>
+        <div class="font-weight-six-hundred font-color">£{{ Auth()->User()->format_money }}</div>
     </div>
     <div class="padding-four background-color-six border-radius border">
         <div class="font-size-two font-color-three">Level</div>
-        <div class="font-weight-six-hundred font-color">{{ number_format(Auth()->User()->user_level) }}</div>
+        <div class="font-weight-six-hundred font-color">{{ Number::abbreviate(Auth()->User()->user_level) }}</div>
     </div>
     <div class="padding-four background-color-six border-radius border">
         <div class="font-size-two font-color-three">Status</div>
