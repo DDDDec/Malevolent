@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,15 +21,12 @@
             <div class="grid grid-two-columns-three-fr-one-fr grid-gap-two">
                 <div>
 
-                    <livewire:homepage.servers/>
-                    <x-content.homepage.server-features/>
-                    <livewire:homepage.server-statistics/>
+                    <x-content.auth.forgot/>
 
                 </div>
                 <div>
 
-                    <livewire:homepage.user-activity/>
-                    <livewire:homepage.server-activity/>
+                    <x-content.auth.forgot-terms/>
 
                 </div>
             </div>

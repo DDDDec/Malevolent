@@ -92,11 +92,11 @@
                     </a>
 
                     <div class="background-color-three display-none border-two border-radius position-absolute overflow-hidden">
-                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Homepage') }}" wire:navigate>
+                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Player Ranks') }}" wire:navigate>
                             <i class="fa-solid fa-star"></i>
                             &nbsp;&nbsp;Player Ranks
                         </a>
-                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Homepage') }}" wire:navigate>
+                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Username Colors') }}" wire:navigate>
                             <i class="fa-solid fa-droplet"></i>
                             &nbsp;&nbsp;Username Colors
                         </a>
@@ -141,7 +141,7 @@
                                 &nbsp;&nbsp;Register
                             </a>
                             <div class="border"></div>
-                            <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Homepage') }}" wire:navigate>
+                            <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Forgot Password') }}" wire:navigate>
                                 <i class="fa-solid fa-key"></i>
                                 &nbsp;&nbsp;Forgot Password
                             </a>
