@@ -38,8 +38,6 @@ class Servers
                 Server::updateOrCreate(
                     ['server_port' => $data['port']],
                     [
-                        'server_ip' => $data['ip'],
-                        'server_port' => $data['port'],
                         'server_players_count' => $data['realClients'],
                         'server_players_max' => $data['maxplayers'],
                         'server_round' => $data['round']

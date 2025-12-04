@@ -21,13 +21,13 @@
             <div class="grid grid-two-columns-three-fr-one-fr grid-gap-two">
                 <div>
 
-                    <x-content.community.search/>
-                    <x-content.community.user-recently-played/>
+                    <livewire:community.search/>
+                    <livewire:community.user-recently-played/>
 
                 </div>
                 <div>
 
-                    <x-content.homepage.user-activity/>
+                    <livewire:homepage.user-activity/>
 
                 </div>
             </div>

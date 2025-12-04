@@ -24,13 +24,13 @@
 
                 <livewire:homepage.servers/>
                 <x-content.homepage.server-features/>
-                <x-content.homepage.server-statistics/>
+                <livewire:homepage.server-statistics/>
 
             </div>
             <div>
 
-                <x-content.homepage.user-activity/>
-                <x-content.homepage.server-activity/>
+                <livewire:homepage.user-activity/>
+                <livewire:homepage.server-activity/>
 
             </div>
         </div>

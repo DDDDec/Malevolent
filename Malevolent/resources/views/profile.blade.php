@@ -21,15 +21,15 @@
             <div class="grid grid-two-columns-three-fr-one-fr grid-gap-two">
                 <div>
 
-                    <x-content.account.avatar/>
-                    <x-content.account.missions/>
-                    <x-content.account.achievements/>
+                    <livewire:account.avatar/>
+                    <livewire:account.missions/>
+                    <livewire:account.achievements/>
 
                 </div>
                 <div>
 
-                    <x-content.account.statistics/>
-                    <x-content.account.user-activity/>
+                    <livewire:account.statistics/>
+                    <livewire:account.user-activity/>
 
                 </div>
             </div>
