@@ -3,6 +3,7 @@
 namespace App\Livewire\Homepage;
 
 use App\Models\Server\ServerAction;
+use Illuminate\Support\Facades\Cache;
 use Livewire\Component;
 
 class ServerActivity extends Component
@@ -29,7 +30,9 @@ class ServerActivity extends Component
 
     private function loadServerActions(): void
     {
-        $this->serverActions = ServerAction::latest('created_at')->take(5)->get()->toArray();
+        $this->serverActions = Cache::remember('server.action', 300, function () {
+            return ServerAction::latest('created_at')->take(5)->get()->toArray();
+        });
     }
 
     public function render()

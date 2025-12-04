@@ -11,18 +11,17 @@ class Missions extends Component
 
     public function mount(): void
     {
-        $this->loadMissions();
+
     }
 
     public function poll(): void
     {
-        $this->loadMissions();
-        $this->dispatch('missions-updated');
+
     }
 
     private function loadMissions(): void
     {
-        $this->missions = User::all()->toArray();
+
     }
 
     public function render()

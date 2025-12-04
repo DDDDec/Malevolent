@@ -3,6 +3,7 @@
 namespace App\Livewire\Homepage;
 
 use App\Models\User\UserAction;
+use Illuminate\Support\Facades\Cache;
 use Livewire\Component;
 
 class UserActivity extends Component
@@ -29,7 +30,9 @@ class UserActivity extends Component
 
     private function loadUserActions(): void
     {
-        $this->userActions = UserAction::latest('created_at')->take(5)->get()->toArray();
+        $this->userActions = Cache::remember('user.action', 300, function () {
+            return UserAction::latest('created_at')->take(5)->get()->toArray();
+        });
     }
 
     public function render()

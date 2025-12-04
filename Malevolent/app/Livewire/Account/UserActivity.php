@@ -11,18 +11,17 @@ class UserActivity extends Component
 
     public function mount(): void
     {
-        $this->loadUserActivity();
+
     }
 
     public function poll(): void
     {
-        $this->loadUserActivity();
-        $this->dispatch('recently-played-updated');
+
     }
 
     private function loadUserActivity(): void
     {
-        $this->userActivity = UserAction::all()->toArray();
+
     }
 
     public function render()

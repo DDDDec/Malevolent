@@ -17,13 +17,28 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+
             $table->unsignedBigInteger('user_money')->default(config('malevolent.settings.users.default_money'))->index();
             $table->tinyInteger('user_rank')->default(config('malevolent.settings.users.default_rank'))->index();
             $table->tinyInteger('user_prestige')->default(config('malevolent.settings.users.default_prestige'))->index();
             $table->smallInteger('user_level')->default(config('malevolent.settings.users.default_level'))->index();
             $table->string('user_language')->default(config('malevolent.settings.users.default_language'))->index();
             $table->integer('user_color')->default(config('malevolent.settings.users.default_color'))->index();
-            $table->boolean('user_banned')->default(false);
+            $table->boolean('user_banned')->default(false)->index();
+
+            $table->unsignedBigInteger('user_kills')->default(0)->index();
+            $table->unsignedBigInteger('user_downs')->default(0)->index();
+            $table->unsignedBigInteger('user_revives')->default(0)->index();
+            $table->unsignedBigInteger('user_headshots')->default(0)->index();
+
+            $table->unsignedBigInteger('user_boss_kills')->default(0)->index();
+            $table->unsignedBigInteger('user_easter_eggs')->default(0)->index();
+            $table->unsignedBigInteger('user_missions')->default(0)->index();
+            $table->unsignedBigInteger('user_achievements')->default(0)->index();
+            $table->unsignedBigInteger('user_interest_earned')->default(0)->index();
+            $table->unsignedBigInteger('user_gambled')->default(0)->index();
+            $table->unsignedBigInteger('user_chat_games')->default(0)->index();
+
             $table->rememberToken();
             $table->timestamps();
         });

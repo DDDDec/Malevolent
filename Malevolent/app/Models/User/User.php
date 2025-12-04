@@ -78,6 +78,20 @@ class User extends Authenticatable
         );
     }
 
+    protected function formatBanned(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => $this->user_banned ? 'Banned' : 'Unbanned'
+        );
+    }
+
+    protected function formatLevel(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => Number::abbreviate($this->user_level)
+        );
+    }
+
     public function actions(): HasMany
     {
         return $this->hasMany(UserAction::class);

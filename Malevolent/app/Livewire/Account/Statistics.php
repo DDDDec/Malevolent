@@ -11,18 +11,17 @@ class Statistics extends Component
 
     public function mount(): void
     {
-        $this->loadStatistics();
+
     }
 
     public function poll(): void
     {
-        $this->loadStatistics();
-        $this->dispatch('recently-played-updated');
+
     }
 
     private function loadStatistics(): void
     {
-        $this->statistics = User::all()->toArray();
+
     }
 
     public function render()

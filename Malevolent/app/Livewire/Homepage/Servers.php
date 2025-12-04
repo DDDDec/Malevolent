@@ -3,6 +3,7 @@
 namespace App\Livewire\Homepage;
 
 use App\Models\Server\Server;
+use Illuminate\Support\Facades\Cache;
 use Livewire\Component;
 
 class Servers extends Component
@@ -22,7 +23,9 @@ class Servers extends Component
 
     private function loadServers(): void
     {
-        $this->servers = Server::all()->toArray();
+        $this->servers = Cache::remember('servers', 300, function () {
+            return Server::all()->toArray();
+        });
     }
 
     public function render()
