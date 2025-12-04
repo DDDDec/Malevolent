@@ -122,7 +122,7 @@
                                 <i class="fa-solid fa-user"></i>
                                 &nbsp;&nbsp;Profile Page
                             </a>
-                            <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Account') }}" wire:navigate>
+                            <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Settings') }}" wire:navigate>
                                 <i class="fa-solid fa-gear"></i>
                                 &nbsp;&nbsp;Account Settings
                             </a>

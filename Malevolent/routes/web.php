@@ -17,6 +17,6 @@ Route::post('/auth/register', [AuthController::class, 'register'])->name('auth.r
 Route::get('/auth/logout', [AuthController::class, 'logout'])->name('auth.logout');
 
 Route::get('/profile/{user:name}', function (User $user) { return view('profile', ['user' => $user]); })->name('Profile');;
-Route::get('/account', function () { return view('account'); })->name('Account');;
+Route::get('/settings', function () { return view('settings'); })->name('Settings');;
 
 Route::post('/api/language', [LanguageController::class, 'handle'])->name('api.language')->withoutMiddleware([StartSession::class]);
