@@ -1,4 +1,4 @@
-<div class="border padding-two border-radius" wire:poll.visible>
+<div class="border padding-two border-radius" wire:poll.visible="poll">
     <form>
         <input type="text" placeholder="Please type a players username" class="width-100-percent border border-radius background-none padding-two box-sizing-border-box font-color font-weight-six-hundred font-family default-outline">
     </form>

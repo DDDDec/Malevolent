@@ -1,4 +1,4 @@
-<div class="border padding-two box-sizing-border-box border-radius grid grid-one-column grid-gap">
+<div class="border padding-two box-sizing-border-box border-radius grid grid-one-column grid-gap" wire:poll.visible="poll">
     <div class="padding-seven background-color-six border-radius border">
         <div class="font-color font-weight-six-hundred margin-top-two">
             <img class="position-absolute margin-minus-top"

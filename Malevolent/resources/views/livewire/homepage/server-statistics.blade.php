@@ -1,4 +1,4 @@
-<div class="border padding-two box-sizing-border-box border-radius margin-top grid grid-four-columns grid-gap">
+<div class="border padding-two box-sizing-border-box border-radius margin-top grid grid-four-columns grid-gap" wire:poll.visible="poll">
     <div class="padding-eight background-color-six border-radius border">
         <div class="flex flex-justify-center font-color-three">
             Kills

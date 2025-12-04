@@ -1,3 +1,24 @@
 .pulse {
     animation: pulse-animation 2s infinite;
 }
+
+@keyframes slideInFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+        max-height: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        max-height: 200px;
+    }
+}
+
+.activity-slide-in {
+    animation: slideInFromTop 0.4s ease-out forwards;
+}
+
+.grid-one-column > div {
+    transition: transform 0.3s ease-out;
+}
