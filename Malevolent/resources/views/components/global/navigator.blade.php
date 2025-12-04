@@ -118,7 +118,7 @@
 
                     <div class="background-color-three display-none border-two border-radius position-absolute overflow-hidden position-right">
                         @if(Auth()->User())
-                            <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Profile') }}" wire:navigate>
+                            <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Profile', ['user' => Auth()->user()->name]) }}" wire:navigate>
                                 <i class="fa-solid fa-user"></i>
                                 &nbsp;&nbsp;Profile Page
                             </a>

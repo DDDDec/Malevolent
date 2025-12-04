@@ -23,7 +23,7 @@ class AuthController extends Controller
 
         if (Auth::attempt($credentials, $request->filled('remember'))) {
             $request->session()->regenerate();
-            return redirect()->intended('/profile');
+            return redirect()->intended('/profile/'.$request->name);
         }
 
         return back()->withErrors(['login' => 'Login attempt failed. Please check your username and password.'])->onlyInput('name');
@@ -47,7 +47,7 @@ class AuthController extends Controller
         event(new Registered($user));
         Auth::login($user);
 
-        return redirect('/profile');
+        return redirect('/profile/'.$userAction->plutonium_name);
     }
 
     public function logout(Request $request): RedirectResponse
