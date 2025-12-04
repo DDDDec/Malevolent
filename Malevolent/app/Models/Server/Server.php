@@ -18,6 +18,8 @@ class Server extends Model
         'server_map',
         'server_round',
         'server_players',
+        'server_players_count',
+        'server_players_max',
         'server_password',
         'server_maintenance',
     ];

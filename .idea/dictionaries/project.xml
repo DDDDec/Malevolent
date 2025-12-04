@@ -4,6 +4,7 @@
       <w>clientkick</w>
       <w>dvar</w>
       <w>gamemode</w>
+      <w>godmode</w>
       <w>mapstartlocation</w>
       <w>nuketown</w>
       <w>spawnstruct</w>

@@ -6,7 +6,7 @@ return [
     ],
 
     'server' => [
-        ['server_ip' => '192.168.1.157', 'server_port' => '4977']
+        ['server_ip' => '31.104.244.36', 'server_port' => '4977']
     ],
 
     'user-action' => [

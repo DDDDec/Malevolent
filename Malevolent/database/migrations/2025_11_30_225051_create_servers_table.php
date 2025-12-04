@@ -14,10 +14,12 @@ return new class extends Migration
         Schema::create('servers', function (Blueprint $table) {
             $table->id();
             $table->string('server_ip');
-            $table->string('server_port')->unique();
+            $table->integer('server_port')->unique();
             $table->string('server_map')->default('Town');
             $table->string('server_round')->default(0)->index();
             $table->string('server_players')->nullable();
+            $table->integer('server_players_count')->default(0);
+            $table->integer('server_players_max')->default(0);
             $table->string('server_password')->nullable();
             $table->boolean('server_maintenance')->default(true);
             $table->unsignedBigInteger('server_kills')->default(0)->index();

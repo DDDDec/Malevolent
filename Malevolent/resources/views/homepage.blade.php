@@ -22,7 +22,7 @@
         <div class="grid grid-two-columns-three-fr-one-fr grid-gap-two">
             <div>
 
-                <x-content.homepage.servers/>
+                <livewire:homepage.servers/>
                 <x-content.homepage.server-features/>
                 <x-content.homepage.server-statistics/>
 
