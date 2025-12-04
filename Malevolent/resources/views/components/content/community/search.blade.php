@@ -9,7 +9,7 @@
                 <img class="position-absolute margin-minus-top-four margin-minus-left" src="{{ Avatar::create('Dec')->setDimension(60)->setFontSize(18)->setChars(3)->toBase64() }}"/>
                 <div class="margin-left-two font-color font-weight-six-hundred">
                     Dec
-                    <div class="font-color-three font-weight-normal">
+                    <div class=" font-color-three font-weight-normal font-size-two">
                         Offline
                     </div>
                 </div>
@@ -20,7 +20,7 @@
                 <img class="position-absolute margin-minus-top-four margin-minus-left" src="{{ Avatar::create('Dec')->setDimension(60)->setFontSize(18)->setChars(3)->toBase64() }}"/>
                 <div class="margin-left-two font-color font-weight-six-hundred">
                     Dec
-                    <div class="font-color-three font-weight-normal">
+                    <div class=" font-color-three font-weight-normal font-size-two">
                         Offline
                     </div>
                 </div>
@@ -30,7 +30,7 @@
             <img class="position-absolute margin-minus-top-four margin-minus-left" src="{{ Avatar::create('Dec')->setDimension(60)->setFontSize(18)->setChars(3)->toBase64() }}"/>
             <div class="margin-left-two font-color font-weight-six-hundred">
                 Dec
-                <div class="font-color-three font-weight-normal">
+                <div class=" font-color-three font-weight-normal font-size-two">
                     Offline
                 </div>
             </div>
@@ -40,7 +40,7 @@
                 <img class="position-absolute margin-minus-top-four margin-minus-left" src="{{ Avatar::create('Dec')->setDimension(60)->setFontSize(18)->setChars(3)->toBase64() }}"/>
                 <div class="margin-left-two font-color font-weight-six-hundred">
                     Dec
-                    <div class="font-color-three font-weight-normal">
+                    <div class=" font-color-three font-weight-normal font-size-two">
                         Offline
                     </div>
                 </div>
