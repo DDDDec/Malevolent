@@ -21,12 +21,12 @@
             <div class="grid grid-two-columns-three-fr-one-fr grid-gap-two">
                 <div>
 
-                    <x-content.auth.forgot/>
+                    <x-content.store.ranks/>
 
                 </div>
                 <div>
 
-                    <x-content.auth.forgot-terms/>
+                    <x-content.store.wallet/>
 
                 </div>
             </div>
