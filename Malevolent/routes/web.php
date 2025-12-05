@@ -10,6 +10,10 @@ Route::get('/', function () { return view('homepage'); })->name('Homepage');;
 
 Route::get('/search', function () { return view('search'); })->name('Search');;
 
+Route::get('/tickets', function () { return view('tickets'); })->name('Support Tickets');;
+Route::get('/commands', function () { return view('commands'); })->name('Command Booklet');;
+Route::get('/guides', function () { return view('guides'); })->name('Server Guides');;
+
 Route::get('/ranks', function () { return view('ranks'); })->name('Player Ranks');;
 Route::get('/colors', function () { return view('colors'); })->name('Username Colors');;
 

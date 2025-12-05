@@ -69,16 +69,16 @@
                     </a>
 
                     <div class="background-color-three display-none border-two border-radius position-absolute overflow-hidden">
-                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Homepage') }}" wire:navigate>
+                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Support Tickets') }}" wire:navigate>
                             <i class="fa-solid fa-ticket"></i>
                             &nbsp;&nbsp;Support Tickets
                         </a>
                         <div class="border"></div>
-                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Homepage') }}" wire:navigate>
+                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Command Booklet') }}" wire:navigate>
                             <i class="fa-solid fa-book"></i>
                             &nbsp;&nbsp;Commands Booklet
                         </a>
-                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Homepage') }}" wire:navigate>
+                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Server Guides') }}" wire:navigate>
                             <i class="fa-solid fa-map-location-dot"></i>
                             &nbsp;&nbsp;Server Guides
                         </a>
