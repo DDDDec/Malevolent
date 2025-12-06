@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Plutonium;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
 
 class LanguageController extends Controller
 {
@@ -13,14 +14,22 @@ class LanguageController extends Controller
     public function handle(Request $request)
     {
         $key = $request->header('X-Api-Key');
-        $user = $request->header('X-User-Id');
         $port = $request->header('X-Server-Port');
 
-        if (!$key || !$user || !$port) {
+        if (!$key || !$port) {
             return "[^5Request^7] This request failed, please contact the server administrator.";
         }
 
-        $message = config('malevolent.language.'.$request->input('language'));
-        return $message[$request->input('language_id')];
+        $message = config('malevolent.languages.' . $request->input('language') . '.' . $request->input('language_id'));
+
+        if (!$message) {
+            return "[^5Request^7] Translation not found.";
+        }
+
+        foreach ($request->all() as $key => $value) {
+            $message = str_replace(":{$key}", $value, $message);
+        }
+
+        return $message;
     }
 }

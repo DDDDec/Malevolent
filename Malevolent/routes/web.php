@@ -33,4 +33,6 @@ Route::get('/forgot', function () { return view('forgot'); })->name('Forgot Pass
 Route::get('/profile/{user:name}', function (User $user) { return view('profile', ['user' => $user]); })->name('Profile');;
 Route::get('/settings', function () { return view('settings'); })->name('Settings');;
 
-Route::post('/api/language', [LanguageController::class, 'handle'])->name('api.language')->withoutMiddleware([StartSession::class]);
+Route::withoutMiddleware(['web'])->group(function () {
+    Route::post('/api/language', [LanguageController::class, 'handle']);
+});

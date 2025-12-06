@@ -15,18 +15,18 @@ command_account_level_up(args)
 {
     player = strToK(self.pers["player-data"], ";");
 
-    language = [];
-    language["language"] = player[4];
+    data = [];
+    data["language"] = player[4];
 
     if (int(player[3]) == 1000) {
-        language["language_id"] = 0;
+        data["language_id"] = 0;
         message = utility_request(data, "language");
         self tell(message);
         return;
     }
 
     if (int(player[2]) < int(getDvar("account_max_prestige")) && int(player[3]) == int(getDvar("account_max_level"))) {
-        language["language_id"] = 1;
+        data["language_id"] = 1;
         message = utility_request(data, "language");
         self tell(message);
         return;
@@ -34,7 +34,18 @@ command_account_level_up(args)
 
     account = database_query("SELECT * FROM users WHERE id=?", array(self.guid));
 
-    if (int(player[2]) == int(getDvar("account_max_prestige") && isDefined(args[1]) && args[1] == "all" || args[1] == "max") {
-
+    if (int(player[2]) == int(getDvar("account_max_prestige")) && isDefined(args[1]) && args[1] == "all" || args[1] == "max") {
+        data["language_id"] = 2;
+        data["user_level"] = 2;
+        data["user_cost"] = 2000;
+        message = utility_request(data, "language");
+        self tell(message);
+        return;
     }
+
+    data["language_id"] = 2;
+    data["user_level"] = 2;
+    data["user_cost"] = 2000;
+    message = utility_request(data, "language");
+    self tell(message);
 }
