@@ -7,7 +7,12 @@ use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () { return view('homepage'); })->name('Homepage');;
+Route::get('/terms-of-service', function () { return view('terms'); })->name('Terms Of Service');;
+Route::get('/privacy-policy', function () { return view('privacy'); })->name('Privacy Policy');;
 
+Route::get('/leaderboard/rounds', function () { return view('rounds'); })->name('Round Leaderboards');;
+Route::get('/leaderboard/stats', function () { return view('stats'); })->name('Stats Leaderboards');;
+Route::get('/leaderboard/servers', function () { return view('servers'); })->name('Server Leaderboards');;
 Route::get('/search', function () { return view('search'); })->name('Search');;
 
 Route::get('/tickets', function () { return view('tickets'); })->name('Support Tickets');;
@@ -16,6 +21,7 @@ Route::get('/guides', function () { return view('guides'); })->name('Server Guid
 
 Route::get('/ranks', function () { return view('ranks'); })->name('Player Ranks');;
 Route::get('/colors', function () { return view('colors'); })->name('Username Colors');;
+Route::get('/refund-policy', function () { return view('refunds'); })->name('Refunds Policy');;
 
 Route::get('/login', function () { return view('login'); })->name('Login');;
 Route::post('/auth/login', [AuthController::class, 'login'])->name('auth.login');

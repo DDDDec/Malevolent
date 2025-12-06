@@ -24,11 +24,11 @@
                             &nbsp;&nbsp;Download Client
                         </a>
                         <div class="border"></div>
-                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Homepage') }}" wire:navigate>
+                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Terms Of Service') }}" wire:navigate>
                             <i class="fa-solid fa-scroll"></i>
                             &nbsp;&nbsp;Terms Of Service
                         </a>
-                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Homepage') }}" wire:navigate>
+                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Privacy Policy') }}" wire:navigate>
                             <i class="fa-solid fa-scroll"></i>
                             &nbsp;&nbsp;Privacy Policy
                         </a>
@@ -42,15 +42,15 @@
                     </a>
 
                     <div class="background-color-three display-none border-two border-radius position-absolute overflow-hidden">
-                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Homepage') }}" wire:navigate>
+                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Round Leaderboards') }}" wire:navigate>
                             <i class="fa-solid fa-chart-simple"></i>
                             &nbsp;&nbsp;Round Leaderboard
                         </a>
-                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Homepage') }}" wire:navigate>
+                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Stats Leaderboards') }}" wire:navigate>
                             <i class="fa-solid fa-chart-simple"></i>
                             &nbsp;&nbsp;Stats Leaderboard
                         </a>
-                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Homepage') }}" wire:navigate>
+                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Server Leaderboards') }}" wire:navigate>
                             <i class="fa-solid fa-chart-simple"></i>
                             &nbsp;&nbsp;Server Leaderboard
                         </a>
@@ -101,7 +101,7 @@
                             &nbsp;&nbsp;Username Colors
                         </a>
                         <div class="border"></div>
-                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Homepage') }}" wire:navigate>
+                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Refunds Policy') }}" wire:navigate>
                             <i class="fa-solid fa-scroll"></i>
                             &nbsp;&nbsp;Refund Policy
                         </a>
