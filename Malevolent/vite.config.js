@@ -7,6 +7,7 @@ export default defineConfig({
         laravel({
             input: ['resources/css/app.css', 'resources/js/app.js'],
             refresh: true,
+            publicPath: "/public/",
         }),
         viteStaticCopy({
             targets: [
@@ -21,4 +22,7 @@ export default defineConfig({
             ]
         })
     ],
+    build: {
+        copyPublicDir: true,
+    }
 });

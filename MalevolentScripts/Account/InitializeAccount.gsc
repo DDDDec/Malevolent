@@ -39,6 +39,6 @@ initialize_account() {
         return;
     }
 
-    self.pers["player-data"] = self.name + ";" + account[0][0]["user_rank"] + ";" + account[0][0]["user_prestige"] + ";" + account[0][0]["user_level"] + ";" + account[0][0]["user_language"];
+    self.pers["player-data"] = self.name + ";" + account[0][0]["user_rank"] + ";" + account[0][0]["user_prestige"] + ";" + account[0][0]["user_level"] + ";" + account[0][0]["user_language"] + ";" + account[0][0]["user_color"];
     self rename("[^" + account[0][0]["user_color"]  + "L" + account[0][0]["user_level"] + "^7][^" + account[0][0]["user_color"]  + "P" + account[0][0]["user_prestige"] + "^7] " + self.name + "^7");
 }
