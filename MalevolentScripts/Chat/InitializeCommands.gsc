@@ -16,13 +16,13 @@
 ///////////////////////////////////////////////
 initialize_commands()
 {
-    chat::register_command(".levelup", ::command_account_level_up(args), true);
-    chat::register_command(".prestige", ::command_account_prestige(args), true);
+    chat::register_command(array(".levelup", ".lu"), ::command_account_level_up(args), true);
+    chat::register_command(array(".prestige", ".psg"), ::command_account_prestige(args), true);
 
-    chat::register_command(".deposit", ::command_bank_deposit(args), true);
-    chat::register_command(".withdraw", ::command_bank_withdraw(args), true);
+    chat::register_command(array(".deposit", ".d"), ::command_bank_deposit(args), true);
+    chat::register_command(array(".withdraw", ".w"), ::command_bank_withdraw(args), true);
 
-    chat::register_command(".godmode", ::command_staff_godmode(args), true);
+    chat::register_command(array(".godmode", "gm"), ::command_staff_godmode(args), true);
 
     chat::register_command(".chat", ::command_chat(args), true);
 }
