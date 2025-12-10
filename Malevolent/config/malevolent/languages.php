@@ -18,6 +18,16 @@ return [
             '[^5Prestige^7] You\'ve reached prestige ^5:next_prestige',
         ],
 
+        // Deposit Messages
+        'CommandDeposit' => [
+            '[^5Deposit^7] You\'ve deposited ^5$:deposit_amount^7, new balance is ^5$:new_balance',
+        ],
+
+        // Withdraw Messages
+        'CommandWithdraw' => [
+            '[^5Withdraw^7] You\'ve withdrawn ^5$:withdraw_amount^7, new balance is ^5$:new_balance',
+        ],
+
         // Godmode Messages
         'CommandGodmode' => [
             '[^5Godmode^7] Only staff members can use this command',

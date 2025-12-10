@@ -3,6 +3,8 @@
 ///////////////////////////////////////////////////////////////////////////////
 #include scripts/zm/Chat/Commands/Account/CommandAccountLevelUp;             //
 #include scripts/zm/Chat/Commands/Account/CommandAccountPrestige;            //
+#include scripts/zm/Chat/Commands/Bank/CommandBankDeposit;                   //
+#include scripts/zm/Chat/Commands/Bank/CommandBankWithdraw;                  //
 #include scripts/zm/Chat/Commands/Staff/CommandStaffGodmode;                 //
 #include scripts/zm/Chat/Commands/CommandChat;                               //
 ///////////////////////////////////////////////////////////////////////////////
@@ -16,6 +18,9 @@ initialize_commands()
 {
     chat::register_command(".levelup", ::command_account_level_up(args), true);
     chat::register_command(".prestige", ::command_account_prestige(args), true);
+
+    chat::register_command(".deposit", ::command_bank_deposit(args), true);
+    chat::register_command(".withdraw", ::command_bank_withdraw(args), true);
 
     chat::register_command(".godmode", ::command_staff_godmode(args), true);
 
