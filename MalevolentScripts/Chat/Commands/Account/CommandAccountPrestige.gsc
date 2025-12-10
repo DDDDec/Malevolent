@@ -17,16 +17,17 @@ command_account_prestige(args)
 
     data = [];
     data["language"] = player[4];
+    data["language_type"] = "CommandPrestige";
 
     if (int(player[2]) == int(getDvar("account_max_prestige"))) {
-        data["language_id"] = 4;
+        data["language_id"] = 0;
         data["master_prestige"] = getDvar("account_max_prestige");
         self tell(utility_request(data, "language"));
         return;
     }
 
     if (int(player[3]) < int(getDvar("account_max_level"))) {
-        data["language_id"] = 5;
+        data["language_id"] = 1;
         data["max_level"] = getDvar("account_max_level");
         self tell(utility_request(data, "language"));
         return;
@@ -37,7 +38,7 @@ command_account_prestige(args)
     next_prestige = int(account[0][0]["user_prestige"]) + 1;
 
     if (int(account[0][0]["user_money"]) < int(cost)) {
-        data["language_id"] = 6;
+        data["language_id"] = 2;
         data["prestige_cost"] = int(cost);
         data["next_prestige"] = next_prestige;
         self tell(utility_request(data, "language"));
@@ -45,7 +46,7 @@ command_account_prestige(args)
     }
 
     database_query("UPDATE users SET user_money=user_money-?, user_prestige=? WHERE id=?", array(cost, next_prestige, self.guid));
-    data["language_id"] = 7;
+    data["language_id"] = 3;
     data["next_prestige"] = next_prestige;
     self tell(utility_request(data, "language"));
     self.pers["player-data"] = player[0] + ";" + account[0][0]["user_rank"] + ";" + next_prestige + ";" + account[0][0]["user_level"] + ";" + account[0][0]["user_language"] + ";" + account[0][0]["user_color"];

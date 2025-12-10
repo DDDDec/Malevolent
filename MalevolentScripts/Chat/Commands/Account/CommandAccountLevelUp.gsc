@@ -17,6 +17,7 @@ command_account_level_up(args)
 
     data = [];
     data["language"] = player[4];
+    data["language_type"] = "CommandLevelUp";
 
     if (int(player[3]) == 1000) {
         data["language_id"] = 0;

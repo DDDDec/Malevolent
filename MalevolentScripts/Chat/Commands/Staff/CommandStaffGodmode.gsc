@@ -17,9 +17,10 @@ command_staff_godmode(args)
 
     data = [];
     data["language"] = player[4];
+    data["language_type"] = "CommandGodmode";
 
     if (int(player[1]) < 5) {
-        data["language_id"] = 8;
+        data["language_id"] = 0;
         self tell(utility_request(data, "language"));
         return;
     }
@@ -28,13 +29,13 @@ command_staff_godmode(args)
         self enableInvulnerability();
         self.ignoreme = 1;
 
-        data["language_id"] = 9;
+        data["language_id"] = 1;
         self tell(utility_request(data, "language"));
     } else {
         self disableInvulnerability();
         self.ignoreme = 0;
 
-        data["language_id"] = 910;
+        data["language_id"] = 2;
         self tell(utility_request(data, "language"));
     }
 }

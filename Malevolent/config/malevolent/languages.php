@@ -3,21 +3,27 @@
 return [
     'en' => [
         // Level Up Messages
-        '[^5LevelUp^7] You\'re level ^51,000^7 and cannot level up anymore',
-        '[^5LevelUp^7] You\'re level ^565^7, use ^5.prestige^7 to continue progressing',
-        '[^5LevelUp^7] You cannot afford to level up to ^5:user_level^7, You need ^5$:user_cost',
-        '[^5LevelUp^7] Your level has been raised to ^5:user_level^7 for ^5$:user_cost',
+        'CommandLevelUp' => [
+            '[^5LevelUp^7] You\'re level ^51,000^7 and cannot level up anymore',
+            '[^5LevelUp^7] You\'re level ^565^7, use ^5.prestige^7 to continue progressing',
+            '[^5LevelUp^7] You cannot afford to level up to ^5:user_level^7, You need ^5$:user_cost',
+            '[^5LevelUp^7] Your level has been raised to ^5:user_level^7 for ^5$:user_cost',
+        ],
 
         // Prestige Messages
-        '[^5Prestige^7] You\'ve reached master prestige and cannot progress any further',
-        '[^5Prestige^7] You need to be level ^5:max_level^7 to prestige',
-        '[^5Prestige^7] You can\'t afford to prestige to ^5:next_prestige, you need ^5$:prestige_cost',
-        '[^5Prestige^7] You\'ve reached prestige ^5:next_prestige',
+        'CommandPrestige' => [
+            '[^5Prestige^7] You\'ve reached master prestige and cannot progress any further',
+            '[^5Prestige^7] You need to be level ^5:max_level^7 to prestige',
+            '[^5Prestige^7] You can\'t afford to prestige to ^5:next_prestige, you need ^5$:prestige_cost',
+            '[^5Prestige^7] You\'ve reached prestige ^5:next_prestige',
+        ],
 
         // Godmode Messages
-        '[^5Godmode^7] Only staff members can use this command',
-        '[^5Godmode^7] You\'ve enabled godmode',
-        '[^5Godmode^7] You\'ve disabled godmode',
+        'CommandGodmode' => [
+            '[^5Godmode^7] Only staff members can use this command',
+            '[^5Godmode^7] You\'ve enabled godmode',
+            '[^5Godmode^7] You\'ve disabled godmode',
+        ],
     ],
 
     'fr' => [

@@ -20,7 +20,7 @@ class LanguageController extends Controller
             return "[^5Request^7] This request failed, please contact the server administrator.";
         }
 
-        $message = config('malevolent.languages.' . $request->input('language') . '.' . $request->input('language_id'));
+        $message = config('malevolent.languages.' . $request->input('language') . '.' . $request->input('language_type') . '.' . $request->input('language_id'));
 
         if (!$message) {
             return "[^5Request^7] Translation not found.";
