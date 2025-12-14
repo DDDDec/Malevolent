@@ -26,17 +26,12 @@
 #include scripts/zm/Core/CoreScore; //
 //////////////////////////////////////
 
-////////////////////////////////////////////////
-// Include Event Scripts                      //
-////////////////////////////////////////////////
-#include scripts/zm/Event/EventServerStarted; //
-////////////////////////////////////////////////
-
 ///////////////////////////////////////////////
 // Include Utility Scripts                   //
 ///////////////////////////////////////////////
-#include scripts/zm/Utility/UtilityDatabase; //
 #include scripts/zm/Utility/Utility;         //
+#include scripts/zm/Utility/UtilityDatabase; //
+#include scripts/zm/Utility/UtilityRequest;  //
 ///////////////////////////////////////////////
 
 main()
@@ -51,6 +46,8 @@ init() {
     level thread initialize_player();
     level thread initialize_database();
     level thread initialize_commands();
+
+    insert = database_query("INSERT INTO `server_actions` (`server_id`, `server_map`, `server_action`, `created_at`, `updated_at`) values (?, ?, ?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)", array(1, utility_get_map(), utility_get_map() + " server has just started and is ready to play."));
 }
 
 initialize_player() {

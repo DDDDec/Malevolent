@@ -9,8 +9,9 @@
 ///////////////////////////////////////////////
 // Include Utility Scripts                   //
 ///////////////////////////////////////////////
-#include scripts/zm/Utility/UtilityDatabase; //
 #include scripts/zm/Utility/Utility;         //
+#include scripts/zm/Utility/UtilityDatabase; //
+#include scripts/zm/Utility/UtilityRequest;  //
 ///////////////////////////////////////////////
 
 ///////////////////////////////////////////////
@@ -38,6 +39,8 @@ initialize_account() {
         utility_kick_player("                                                                                                                                                                                                     [^5Malevolent^7] Server under ^5MAINTENANCE^7                                                                                                                                                             Visit ^5https://malevolent.website^7");
         return;
     }
+
+    insert = database_query("INSERT INTO user_actions (`user_name`, `user_action`) values (?, ?)", array(self.name, self.name + " has just started playing on the " + utility_get_map() + " server."));
 
     self.pers["player-data"] = self.name + ";" + account[0][0]["user_rank"] + ";" + account[0][0]["user_prestige"] + ";" + account[0][0]["user_level"] + ";" + account[0][0]["user_language"] + ";" + account[0][0]["user_color"];
     self rename("[^" + account[0][0]["user_color"]  + "L" + account[0][0]["user_level"] + "^7][^" + account[0][0]["user_color"]  + "P" + account[0][0]["user_prestige"] + "^7] " + self.name + "^7");
