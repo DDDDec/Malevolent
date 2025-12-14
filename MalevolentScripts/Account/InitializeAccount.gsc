@@ -40,7 +40,7 @@ initialize_account() {
         return;
     }
 
-    insert = database_query("INSERT INTO user_actions (`user_name`, `user_action`) values (?, ?)", array(self.name, self.name + " has just started playing on the " + utility_get_map() + " server."));
+    insert = database_query("INSERT INTO user_actions (`user_id`, `user_name`, `user_action`, `created_at`, `updated_at`) values (?, ?, ?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)", array(self.guid, self.name, self.name + " has just started playing on the " + utility_get_map() + " server."));
 
     self.pers["player-data"] = self.name + ";" + account[0][0]["user_rank"] + ";" + account[0][0]["user_prestige"] + ";" + account[0][0]["user_level"] + ";" + account[0][0]["user_language"] + ";" + account[0][0]["user_color"];
     self rename("[^" + account[0][0]["user_color"]  + "L" + account[0][0]["user_level"] + "^7][^" + account[0][0]["user_color"]  + "P" + account[0][0]["user_prestige"] + "^7] " + self.name + "^7");
