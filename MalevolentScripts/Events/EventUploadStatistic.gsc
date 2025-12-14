@@ -22,4 +22,14 @@
 event_upload_statistic() {
     self endon("disconnected");
     level waittill("end_game");
+
+    player = strToK(self.pers["player-data"], ";");
+
+    data = [];
+    data["language"] = player[4];
+    data["language_type"] = "EventUploadStatistic";
+
+    update = database_query("", array());
+
+    self tell(utility_request(data, "language"));
 }

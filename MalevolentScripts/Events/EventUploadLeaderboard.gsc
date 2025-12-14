@@ -27,4 +27,24 @@ event_upload_leaderboard() {
     if (players.size == 0) {
         return;
     }
+
+    foreach (player in players) {
+        player_data = strToK(player.pers["player-data"], ";");
+
+        if (!isDefined(usernames)) {
+            usernames = player_data[0];
+        } else {
+            usernames = usernames + ", " + player_data[0];
+        }
+    }
+
+    foreach (player in players) {
+        player_data = strToK(player.pers["player-data"], ";");
+
+        data = [];
+        data["language"] = player_data[4];
+        data["language_type"] = "EventUploadStatistic";
+
+        player tell(utility_request(data, "language"));
+    }
 }
