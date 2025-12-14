@@ -20,12 +20,12 @@ return [
 
         // Deposit Messages
         'CommandDeposit' => [
-            '[^5Deposit^7] You\'ve deposited ^5$:deposit_amount^7, new balance is ^5$:new_balance',
+            '[^5Deposit^7] You\'ve deposited ^5$:deposit_amount^7, your new balance is ^5$:new_balance',
         ],
 
         // Withdraw Messages
         'CommandWithdraw' => [
-            '[^5Withdraw^7] You\'ve withdrawn ^5$:withdraw_amount^7, new balance is ^5$:new_balance',
+            '[^5Withdraw^7] You\'ve withdrawn ^5$:withdraw_amount^7, your new balance is ^5$:new_balance',
         ],
 
         // Godmode Messages
