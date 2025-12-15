@@ -126,6 +126,10 @@
       <excludeFolder url="file://$MODULE_DIR$/Malevolent/vendor/laravolt/avatar" />
       <excludeFolder url="file://$MODULE_DIR$/Malevolent/vendor/barryvdh/laravel-debugbar" />
       <excludeFolder url="file://$MODULE_DIR$/Malevolent/vendor/php-debugbar/php-debugbar" />
+      <excludeFolder url="file://$MODULE_DIR$/Malevolent/storage/app" />
+      <excludeFolder url="file://$MODULE_DIR$/Malevolent/storage/debugbar" />
+      <excludeFolder url="file://$MODULE_DIR$/Malevolent/storage/framework" />
+      <excludeFolder url="file://$MODULE_DIR$/Malevolent/vendor/_laravel_idea" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

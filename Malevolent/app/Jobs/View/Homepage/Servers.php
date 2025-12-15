@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Jobs\Server;
+namespace App\Jobs\View\Homepage;
 
 use App\Models\Server\Server;
 use Illuminate\Foundation\Queue\Queueable;
