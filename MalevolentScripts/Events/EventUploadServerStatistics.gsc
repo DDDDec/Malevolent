@@ -15,24 +15,16 @@
 ///////////////////////////////////////////////
 
 ///////////////////////////////////////////////
-// Event Upload Statistic Function           //
+// Event Upload Server Statistic Function    //
 ///////////////////////////////////////////////
-// Uploads statistics on endgame             //
+// Uploads server statistics on endgame      //
 ///////////////////////////////////////////////
-event_upload_statistic() {
+event_upload_server_statistic() {
     self endon("disconnected");
     level waittill("end_game");
 
-    player = strToK(self.pers["player-data"], ";");
-
-    data = [];
-    data["language"] = player[4];
-    data["language_type"] = "EventUploadStatistic";
-
     update = database_query(
-        "UPDATE users SET user_kills=user_kills+? WHERE id=?",
-        array(self.pers["kills"], self.guid)
+        "UPDATE servers SET kills=kills+? WHERE server_port=?",
+        array(level.kills, getDvar("net_port"))
     );
-
-    self tell(utility_request(data, "language"));
 }
