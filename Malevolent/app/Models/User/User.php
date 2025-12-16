@@ -26,12 +26,13 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'money',
-        'rank',
-        'prestige',
-        'level',
-        'language',
-        'banned',
+        'user_money',
+        'user_rank',
+        'user_prestige',
+        'user_level',
+        'user_language',
+        'user_color',
+        'user_banned',
     ];
 
     /**

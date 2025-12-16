@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'en' => [
+    'english' => [
         // Level Up Messages
         'CommandLevelUp' => [
             '[^5LevelUp^7] You\'re level ^51,000^7 and cannot level up anymore',
@@ -36,7 +36,14 @@ return [
         ],
     ],
 
-    'fr' => [
+    'french' => [
+        // Level Up Messages
+        '[^5Niveau Supérieur^7] Votre niveau est ^51,000^7 et ne peux pas augmenter',
+        '[^5Niveau Supérieur^7] Votre niveau est ^565^7, utilisez ^5.prestige^7 pour continuer la progression',
+        '[^5Niveau Supérieur^7] Votre niveau est monté à ^5:user_level^7 for ^5$:user_cost',
+    ],
+
+    'swedish' => [
         // Level Up Messages
         '[^5Niveau Supérieur^7] Votre niveau est ^51,000^7 et ne peux pas augmenter',
         '[^5Niveau Supérieur^7] Votre niveau est ^565^7, utilisez ^5.prestige^7 pour continuer la progression',

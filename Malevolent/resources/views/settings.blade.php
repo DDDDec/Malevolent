@@ -21,12 +21,12 @@
             <div class="grid grid-two-columns-three-fr-one-fr grid-gap-two">
                 <div>
 
-
+                    <livewire:account.settings.language/>
 
                 </div>
                 <div>
 
-
+                    <x-content.account.about/>
 
                 </div>
             </div>
