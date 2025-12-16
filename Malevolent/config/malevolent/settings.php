@@ -6,7 +6,7 @@ return [
         'default_rank' => 1,
         'default_prestige' => 0,
         'default_level' => 1,
-        'default_language' => 'en',
+        'default_language' => 'english',
         'default_color' => 7
     ],
 ];
