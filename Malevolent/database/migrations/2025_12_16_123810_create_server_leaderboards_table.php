@@ -18,6 +18,7 @@ return new class extends Migration
             $table->integer('server_round');
             $table->string('server_players');
             $table->integer('server_player_count');
+            $table->integer('server_time');
             $table->timestamps();
         });
     }

@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Database\Seeders\Server\ServerActionSeeder;
+use Database\Seeders\Server\ServerLeaderboardSeeder;
 use Database\Seeders\Server\ServerSeeder;
 use Database\Seeders\User\UserActionSeeder;
 use Database\Seeders\User\UserPlutoniumSeeder;
@@ -25,6 +26,7 @@ class DatabaseSeeder extends Seeder
             UserPlutoniumSeeder::class,
             UserActionSeeder::class,
             ServerSeeder::class,
+            ServerLeaderboardSeeder::class,
             ServerActionSeeder::class,
         ]);
     }

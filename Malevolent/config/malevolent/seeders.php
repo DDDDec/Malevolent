@@ -33,10 +33,21 @@ return [
     ],
 
     'server-action' => [
-        ['server_id' => 1, 'server_map' => 'Town', 'server_Action' => 'Town server has just started and is ready to play.'],
-        ['server_id' => 1, 'server_map' => 'Nuketown', 'server_Action' => 'Nuketown server has just started and is ready to play.'],
-        ['server_id' => 1, 'server_map' => 'Buried', 'server_Action' => 'Buried server has just started and is ready to play.'],
-        ['server_id' => 1, 'server_map' => 'Origins', 'server_Action' => 'Origins server has just started and is ready to play.'],
-        ['server_id' => 1, 'server_map' => 'Depot', 'server_Action' => 'Depot server has just started and is ready to play.']
+        ['server_id' => 1, 'server_map' => 'Town', 'server_action' => 'Town server has just started and is ready to play.'],
+        ['server_id' => 1, 'server_map' => 'Nuketown', 'server_action' => 'Nuketown server has just started and is ready to play.'],
+        ['server_id' => 1, 'server_map' => 'Buried', 'server_action' => 'Buried server has just started and is ready to play.'],
+        ['server_id' => 1, 'server_map' => 'Origins', 'server_action' => 'Origins server has just started and is ready to play.'],
+        ['server_id' => 1, 'server_map' => 'Depot', 'server_action' => 'Depot server has just started and is ready to play.']
+    ],
+
+    'server-leaderboard' => [
+        ['server_id' => 1, 'server_map' => 'Town', 'server_round' => 1, 'server_players' => 'Dec', 'server_player_count' => 1, 'server_time' => 1],
+        ['server_id' => 2, 'server_map' => 'Nuketown', 'server_round' => 1, 'server_players' => 'Dec', 'server_player_count' => 1, 'server_time' => 1],
+        ['server_id' => 3, 'server_map' => 'Buried', 'server_round' => 1, 'server_players' => 'Dec', 'server_player_count' => 1, 'server_time' => 1],
+        ['server_id' => 4, 'server_map' => 'Origins', 'server_round' => 1, 'server_players' => 'Dec', 'server_player_count' => 1, 'server_time' => 1],
+        ['server_id' => 5, 'server_map' => 'Depot', 'server_round' => 1, 'server_players' => 'Dec', 'server_player_count' => 1, 'server_time' => 1],
+        ['server_id' => 6, 'server_map' => 'Farm', 'server_round' => 1, 'server_players' => 'Dec', 'server_player_count' => 1, 'server_time' => 1],
+        ['server_id' => 7, 'server_map' => 'Tranzit', 'server_round' => 1, 'server_players' => 'Dec', 'server_player_count' => 1, 'server_time' => 1],
+        ['server_id' => 8, 'server_map' => 'Die Rise', 'server_round' => 1, 'server_players' => 'Dec', 'server_player_count' => 1, 'server_time' => 1]
     ]
 ];
