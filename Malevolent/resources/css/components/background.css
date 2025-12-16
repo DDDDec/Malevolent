@@ -19,3 +19,7 @@
 .background-none {
     background: none;
 }
+
+.background-color-main {
+    background-color: red;
+}

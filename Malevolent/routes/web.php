@@ -33,6 +33,7 @@ Route::get('/forgot', function () { return view('forgot'); })->name('Forgot Pass
 Route::get('/profile/{user:name}', function (User $user) { return view('profile', ['user' => $user]); })->name('Profile');;
 Route::get('/settings', function () { return view('settings'); })->name('Settings');;
 Route::post('/settings/language', [AccountController::class, 'changeLanguage'])->name('settings.language');
+Route::post('/settings/delete', [AccountController::class, 'deleteAccount'])->name('settings.delete');
 
 Route::withoutMiddleware(['web'])->group(function () {
     Route::post('/api/language', [LanguageController::class, 'handle']);

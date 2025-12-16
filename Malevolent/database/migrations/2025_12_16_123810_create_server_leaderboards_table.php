@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('server_leaderboards', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('server_id')->constrained('servers');
+            $table->foreignId('server_id')->constrained('servers')->cascadeOnDelete();
             $table->string('server_map');
             $table->integer('server_round');
             $table->string('server_players');

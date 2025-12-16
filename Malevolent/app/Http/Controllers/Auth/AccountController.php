@@ -22,4 +22,14 @@ class AccountController extends Controller
 
         return redirect()->back();
     }
+
+    public function deleteAccount(Request $request)
+    {
+        if (!$request->delete) {
+            return redirect()->back();
+        }
+
+        Auth::user()->delete();
+        return redirect()->back();
+    }
 }

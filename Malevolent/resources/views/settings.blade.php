@@ -22,6 +22,7 @@
                 <div>
 
                     <livewire:account.settings.language/>
+                    <livewire:account.settings.delete/>
 
                 </div>
                 <div>

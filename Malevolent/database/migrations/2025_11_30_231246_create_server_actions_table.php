@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('server_actions', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('server_id')->constrained('servers');
+            $table->foreignId('server_id')->constrained('servers')->cascadeOnDelete();
             $table->string('server_map')->default('Town')->index();
             $table->string('server_action');
             $table->timestamps();
