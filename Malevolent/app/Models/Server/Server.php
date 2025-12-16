@@ -28,4 +28,9 @@ class Server extends Model
     {
         return $this->hasMany(ServerAction::class);
     }
+
+    public function leaderboards(): HasMany
+    {
+        return $this->hasMany(ServerLeaderboard::class);
+    }
 }

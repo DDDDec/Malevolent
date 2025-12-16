@@ -11,11 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('server_actions', function (Blueprint $table) {
+        Schema::create('server_leaderboards', function (Blueprint $table) {
             $table->id();
             $table->foreignId('server_id')->constrained('servers');
-            $table->string('server_map')->default('Town')->index();
-            $table->string('server_action');
+            $table->string('server_map');
+            $table->integer('server_round');
+            $table->string('server_players');
+            $table->integer('server_player_count');
             $table->timestamps();
         });
     }
@@ -25,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('server_actions');
+        Schema::dropIfExists('server_leaderboards');
     }
 };
