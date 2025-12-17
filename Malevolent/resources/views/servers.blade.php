@@ -26,7 +26,7 @@
                 </div>
                 <div>
 
-
+                    <livewire:homepage.server-activity/>
 
                 </div>
             </div>
