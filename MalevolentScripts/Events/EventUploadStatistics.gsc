@@ -19,7 +19,7 @@
 ///////////////////////////////////////////////
 // Uploads statistics on endgame             //
 ///////////////////////////////////////////////
-event_upload_statistic() {
+event_upload_statistics() {
     self endon("disconnected");
     level waittill("end_game");
 

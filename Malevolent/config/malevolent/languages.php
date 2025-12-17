@@ -28,6 +28,12 @@ return [
             '[^5Withdraw^7] You\'ve withdrawn ^5$:withdraw_amount^7, your new balance is ^5$:new_balance',
         ],
 
+        'CommandFunVault' => [
+            '[^5Vault^7] You need to input a password to crack open a vault',
+            '[^5Vault^7] You failed to crack open a vault with code ^5:vault_code',
+            '[^5Vault^7] You cracked open a vault and stole ^5$:vault_money',
+        ],
+
         // Godmode Messages
         'CommandGodmode' => [
             '[^5Godmode^7] Only staff members can use this command',

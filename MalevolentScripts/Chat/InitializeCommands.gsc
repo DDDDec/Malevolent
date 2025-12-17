@@ -5,6 +5,7 @@
 #include scripts/zm/Chat/Commands/Account/CommandAccountPrestige;            //
 #include scripts/zm/Chat/Commands/Bank/CommandBankDeposit;                   //
 #include scripts/zm/Chat/Commands/Bank/CommandBankWithdraw;                  //
+#include scripts/zm/Chat/Commands/Fun/CommandFunVault;                       //
 #include scripts/zm/Chat/Commands/Staff/CommandStaffGodmode;                 //
 #include scripts/zm/Chat/Commands/CommandChat;                               //
 ///////////////////////////////////////////////////////////////////////////////
@@ -21,6 +22,8 @@ initialize_commands()
 
     chat::register_command(array(".deposit", ".d"), ::command_bank_deposit(args), true);
     chat::register_command(array(".withdraw", ".w"), ::command_bank_withdraw(args), true);
+
+    chat::register_command(array(".vault", ".v"), ::command_fun_vault(args), true);
 
     chat::register_command(array(".godmode", "gm"), ::command_staff_godmode(args), true);
 
