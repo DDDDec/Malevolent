@@ -32,5 +32,10 @@ command_fun_chat_game(args)
         return;
     }
 
-    select = database_query("SELECT * FROM server_vaults WHERE id=?", array(args[1]));
+    if (args[1] == level.chat_games) {
+        data["language_id"] = 0;
+        self tell(utility_request(data, "language"));
+        update = database_query("UPDATE users SET user_money=user_money+? WHERE id=?", array(level.chat_game_reward, self.guid));
+        return;
+    }
 }
