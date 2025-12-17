@@ -34,6 +34,12 @@ return [
             '[^5Godmode^7] You\'ve enabled godmode',
             '[^5Godmode^7] You\'ve disabled godmode',
         ],
+
+        // Godmode Messages
+        'EventAutoMessage' => [
+            '[^5Malevolent^7] To progress your level use command .levelup',
+            '[^5Malevolent^7] To progress your prestige use command .prestige',
+        ],
     ],
 
     'french' => [

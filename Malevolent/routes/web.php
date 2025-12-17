@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\Auth\AuthController;
-use App\Http\Controllers\Auth\AccountController;
+use App\Http\Controllers\Account\AuthController;
+use App\Http\Controllers\Account\AccountController;
 use App\Http\Controllers\Plutonium\LanguageController;
 use App\Models\User\User;
 use Illuminate\Support\Facades\Route;

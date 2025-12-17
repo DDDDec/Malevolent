@@ -26,6 +26,12 @@
 #include scripts/zm/Core/CoreScore; //
 //////////////////////////////////////
 
+//////////////////////////////////////////////
+// Include Event Scripts                    //
+//////////////////////////////////////////////
+#include scripts/zm/Event/EventAutoMessage; //
+//////////////////////////////////////////////
+
 ///////////////////////////////////////////////
 // Include Utility Scripts                   //
 ///////////////////////////////////////////////
@@ -47,6 +53,9 @@ init() {
     level thread initialize_database();
     level thread initialize_commands();
 
+    level thread event_auto_message();
+    level thread event_upload_leaderboard();
+
     insert = database_query("INSERT INTO `server_actions` (`server_id`, `server_map`, `server_action`, `created_at`, `updated_at`) values (?, ?, ?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)", array(1, utility_get_map(), utility_get_map() + " server has just started and is ready to play."));
 }
 
@@ -56,6 +65,8 @@ initialize_player() {
         level waittill("connected", player);
 
         player thread initialize_account();
+
+        player thread event_upload_statistics();
 
         self enableInvulnerability();
         self.ignoreme = 1;
