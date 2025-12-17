@@ -30,6 +30,6 @@ class AccountController extends Controller
         }
 
         Auth::user()->delete();
-        return redirect()->back();
+        return redirect('/');
     }
 }

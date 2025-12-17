@@ -2,7 +2,16 @@
 
 return [
     'user' => [
-        ['id' => 1, 'name' => 'Malevolent', 'email' => 'malevolent@malevolent.website', 'password' => 'malevolent123']
+        ['id' => 1, 'name' => 'Malevolent', 'email' => 'malevolent@malevolent.website', 'password' => 'malevolent123'],
+        ['id' => 2, 'name' => 'Json', 'email' => 'Json@malevolent.website', 'password' => 'malevolent123'],
+        ['id' => 3, 'name' => 'Function', 'email' => 'Function@malevolent.website', 'password' => 'malevolent123'],
+        ['id' => 4, 'name' => 'Teddy', 'email' => 'Teddy@malevolent.website', 'password' => 'malevolent123'],
+        ['id' => 5, 'name' => 'Kirovy', 'email' => 'Kirovy@malevolent.website', 'password' => 'malevolent123'],
+        ['id' => 6, 'name' => 'Jane', 'email' => 'Jane@malevolent.website', 'password' => 'malevolent123'],
+        ['id' => 7, 'name' => 'React', 'email' => 'React@malevolent.website', 'password' => 'malevolent123'],
+        ['id' => 8, 'name' => 'Chris', 'email' => 'Chris@malevolent.website', 'password' => 'malevolent123'],
+        ['id' => 9, 'name' => 'Lewis', 'email' => 'Lewis@malevolent.website', 'password' => 'malevolent123'],
+        ['id' => 10, 'name' => 'Karl', 'email' => 'Karl@malevolent.website', 'password' => 'malevolent123'],
     ],
 
     'server' => [

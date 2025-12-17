@@ -24,6 +24,8 @@ return new class extends Migration
             $table->smallInteger('user_level')->default(config('malevolent.settings.users.default_level'))->index();
             $table->string('user_language')->default(config('malevolent.settings.users.default_language'))->index();
             $table->integer('user_color')->default(config('malevolent.settings.users.default_color'))->index();
+
+            $table->boolean('user_online')->default(false)->index();
             $table->boolean('user_banned')->default(false)->index();
 
             $table->unsignedBigInteger('user_kills')->default(0)->index();

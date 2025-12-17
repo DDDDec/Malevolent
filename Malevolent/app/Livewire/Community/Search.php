@@ -7,9 +7,15 @@ use Livewire\Component;
 
 class Search extends Component
 {
-    public array $search = [];
+    public array $players = [];
+    public string $search = '';
 
     public function mount(): void
+    {
+        $this->loadSearch();
+    }
+
+    public function updatedSearch(): void
     {
         $this->loadSearch();
     }
@@ -22,7 +28,7 @@ class Search extends Component
 
     private function loadSearch(): void
     {
-        $this->search = User::all()->toArray();
+        $this->players = User::query()->when($this->search !== '', fn ($query) => $query->where('name', 'like', '%' . $this->search . '%'))->limit(20)->get()->toArray();
     }
 
     public function render()

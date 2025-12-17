@@ -32,6 +32,7 @@ class User extends Authenticatable
         'user_level',
         'user_language',
         'user_color',
+        'user_online',
         'user_banned',
     ];
 

@@ -1,4 +1,7 @@
 <?php
 
-Schedule::job(new \App\Jobs\View\Homepage\Servers)->everyFiveMinutes();
-Schedule::job(new \App\Jobs\View\Homepage\ServerStatistics)->everyFiveMinutes();
+use Illuminate\Support\Facades\Schedule;
+
+use App\Jobs\View\Homepage\Servers;
+
+Schedule::job(new Servers)->everyFiveMinutes();

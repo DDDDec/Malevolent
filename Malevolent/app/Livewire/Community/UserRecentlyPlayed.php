@@ -3,11 +3,12 @@
 namespace App\Livewire\Community;
 
 use App\Models\User\User;
+use Illuminate\Support\Collection;
 use Livewire\Component;
 
 class UserRecentlyPlayed extends Component
 {
-    public array $recentlyPlayed = [];
+    public Collection $recentlyPlayed;
 
     public function mount(): void
     {
@@ -22,7 +23,7 @@ class UserRecentlyPlayed extends Component
 
     private function loadRecentlyPlayed(): void
     {
-        $this->recentlyPlayed = User::all()->toArray();
+        $this->recentlyPlayed = User::latest('updated_at')->take(10)->get();
     }
 
     public function render()
