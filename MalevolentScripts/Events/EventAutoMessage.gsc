@@ -37,6 +37,6 @@ event_auto_message() {
             }
         }
 
-        wait 10;
+        wait 300;
     }
 }
