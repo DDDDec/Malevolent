@@ -69,18 +69,18 @@ return [
     ],
 
     'server-achievement' => [
-        ['server_achievement_title' => 'Test Achievement', 'server_achievement_description' => 'Test Achievement', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 1000],
-        ['server_achievement_title' => 'Test Achievement', 'server_achievement_description' => 'Test Achievement', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 1000],
-        ['server_achievement_title' => 'Test Achievement', 'server_achievement_description' => 'Test Achievement', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 1000],
-        ['server_achievement_title' => 'Test Achievement', 'server_achievement_description' => 'Test Achievement', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 1000],
-        ['server_achievement_title' => 'Test Achievement', 'server_achievement_description' => 'Test Achievement', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 1000],
+        ['server_achievement_title' => 'Kill 10 zombies', 'server_achievement_description' => 'Kill 10 zombies', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 1000],
+        ['server_achievement_title' => 'Kill 100 zombies', 'server_achievement_description' => 'Kill 100 zombies', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 1000],
+        ['server_achievement_title' => 'Kill 1k zombies', 'server_achievement_description' => 'Kill 1k zombies', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 1000],
+        ['server_achievement_title' => 'Kill 10k zombies', 'server_achievement_description' => 'Kill 10k zombies', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 1000],
+        ['server_achievement_title' => 'Kill 100k zombies', 'server_achievement_description' => 'Kill 100k zombies', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 1000],
     ],
 
     'server-mission' => [
-        ['server_mission_title' => 'Test Mission', 'server_mission_description' => 'Test Mission', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 1000],
-        ['server_mission_title' => 'Test Mission', 'server_mission_description' => 'Test Mission', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 1000],
-        ['server_mission_title' => 'Test Mission', 'server_mission_description' => 'Test Mission', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 1000],
-        ['server_mission_title' => 'Test Mission', 'server_mission_description' => 'Test Mission', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 1000],
-        ['server_mission_title' => 'Test Mission', 'server_mission_description' => 'Test Mission', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 1000],
+        ['server_mission_title' => 'Kill 10 zombies', 'server_mission_description' => 'Kill 10 zombies', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 1000],
+        ['server_mission_title' => 'Kill 100 zombies', 'server_mission_description' => 'Kill 100 zombies', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 1000],
+        ['server_mission_title' => 'Kill 1k zombies', 'server_mission_description' => 'Kill 1k zombies', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 1000],
+        ['server_mission_title' => 'Kill 10k zombies', 'server_mission_description' => 'Kill 10k zombies', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 1000],
+        ['server_mission_title' => 'Kill 100k zombies', 'server_mission_description' => 'Kill 100k zombies', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 1000],
     ],
 ];

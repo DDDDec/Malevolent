@@ -2,8 +2,12 @@
     <div class="padding-seven background-color-six border-radius border">
         <div class="font-color font-weight-six-hundred">
             <div>
-                <i class="fa-solid fa-star background-color-five padding-two border-radius"></i> &nbsp;&nbsp;&nbsp;VIP (£250,000)
-            </div>
+                <i style="float: left;" class="fa-solid fa-star background-color-five padding-two border-radius"></i>
+                <div style="padding-top: 5px;">
+                    <div class="float-left margin-left-three">VIP Rank</div><br>
+                    <div class="padding-eleven border-radius background-color-six font-size-two float-left margin-left-three">£500,000</div>
+                </div>
+            </div><br><br>
             <div class="margin-top-three font-weight-normal font-color-three font-size-two">
                 Start your VIP journey with exclusive perks and a special in-game rank tag. Show everyone you're a dedicated supporter of Malevolent.
             </div>
@@ -13,8 +17,12 @@
     <div class="padding-seven background-color-six border-radius border">
         <div class="font-color font-weight-six-hundred">
             <div>
-                <i class="fa-solid fa-star background-color-five padding-two border-radius"></i> &nbsp;&nbsp;&nbsp;VIP+ (£1,000,000)
-            </div>
+                <i style="float: left;" class="fa-solid fa-star background-color-five padding-two border-radius"></i>
+                <div style="padding-top: 5px;">
+                    <div class="float-left margin-left-three">VIP+ Rank</div><br>
+                    <div class="padding-eleven border-radius background-color-six font-size-two float-left margin-left-three">£500,000</div>
+                </div>
+            </div><br><br>
             <div class="margin-top-three font-weight-normal font-color-three font-size-two">
                 Take it up a notch with VIP+. Enjoy enhanced benefits and an upgraded in-game rank tag that sets you apart from regular VIPs.
             </div>
@@ -24,8 +32,12 @@
     <div class="padding-seven background-color-six border-radius border">
         <div class="font-color font-weight-six-hundred">
             <div>
-                <i class="fa-solid fa-star background-color-five padding-two border-radius"></i> &nbsp;&nbsp;&nbsp;VIP++ (£10,000,000)
-            </div>
+                <i style="float: left;" class="fa-solid fa-star background-color-five padding-two border-radius"></i>
+                <div style="padding-top: 5px;">
+                    <div class="float-left margin-left-three">VIP++ Rank</div><br>
+                    <div class="padding-eleven border-radius background-color-six font-size-two float-left margin-left-three">£500,000</div>
+                </div>
+            </div><br><br>
             <div class="margin-top-three font-weight-normal font-color-three font-size-two">
                 Reach elite status with VIP++. Unlock premium perks and a prestigious in-game rank tag that commands respect from other players.
             </div>
@@ -35,8 +47,12 @@
     <div class="padding-seven background-color-six border-radius border">
         <div class="font-color font-weight-six-hundred">
             <div>
-                <i class="fa-solid fa-star background-color-five padding-two border-radius"></i> &nbsp;&nbsp;&nbsp;VIP+++ (£50,000,000)
-            </div>
+                <i style="float: left;" class="fa-solid fa-star background-color-five padding-two border-radius"></i>
+                <div style="padding-top: 5px;">
+                    <div class="float-left margin-left-three">VIP+++ Rank</div><br>
+                    <div class="padding-eleven border-radius background-color-six font-size-two float-left margin-left-three">£500,000</div>
+                </div>
+            </div><br><br>
             <div class="margin-top-three font-weight-normal font-color-three font-size-two">
                 The ultimate rank. VIP+++ grants you the highest tier of benefits and an exclusive in-game rank tag reserved only for top supporters.
             </div>

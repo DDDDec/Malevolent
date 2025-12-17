@@ -2,8 +2,12 @@
     <div class="padding-seven background-color-six border-radius border">
         <div class="font-color font-weight-six-hundred margin-top-two">
             <div>
-                <i class="fa-solid fa-wallet background-color-five padding-two border-radius"></i> &nbsp;&nbsp;&nbsp;Wallet
-            </div>
+                <i style="float: left;" class="fa-solid fa-wallet background-color-five padding-two border-radius"></i>
+                <div style="padding-top: 5px;">
+                    <div class="float-left margin-left-three">Wallet</div><br>
+                    <div class="padding-eleven border-radius background-color-six font-size-two float-left margin-left-three">£500,000</div>
+                </div>
+            </div><br><br>
             <p class="font-color-three font-weight-normal font-size-two margin-bottom">
                 This is your wallet, You can top up your wallet by clicking the button below.
             </p>
