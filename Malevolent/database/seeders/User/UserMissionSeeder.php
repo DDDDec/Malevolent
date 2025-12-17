@@ -1,18 +1,18 @@
 <?php
 
-namespace Database\Seeders\Server;
+namespace Database\Seeders\User;
 
-use App\Models\Server\ServerMission;
+use App\Models\User\UserMission;
 use Illuminate\Database\Seeder;
 
-class ServerMissionSeeder extends Seeder
+class UserMissionSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        $missions = config('malevolent.seeders.server-mission', []);
+        $missions = config('malevolent.seeders.mission', []);
 
         if (empty($missions)) {
             $this->command->warn('No missions found in \'config/malevolent/seeder.php\'');
@@ -20,7 +20,7 @@ class ServerMissionSeeder extends Seeder
         }
 
         foreach ($missions as $mission) {
-            ServerMission::create($mission);
+            UserMission::create($mission);
         }
     }
 }

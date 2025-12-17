@@ -61,10 +61,26 @@ return [
     ],
 
     'server-vault' => [
-        ['id' => 1000, 'vault_money'],
-        ['id' => 2000, 'vault_money'],
-        ['id' => 3000, 'vault_money'],
-        ['id' => 4000, 'vault_money'],
-        ['id' => 5000, 'vault_money'],
+        ['server_vault_password' => 1000, 'server_vault_money' => 5000],
+        ['server_vault_password' => 2000, 'server_vault_money' => 5000],
+        ['server_vault_password' => 3000, 'server_vault_money' => 5000],
+        ['server_vault_password' => 4000, 'server_vault_money' => 5000],
+        ['server_vault_password' => 5000, 'server_vault_money' => 5000],
+    ],
+
+    'server-achievement' => [
+        ['server_achievement_title' => 'Test Achievement', 'server_achievement_description' => 'Test Achievement', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 1000],
+        ['server_achievement_title' => 'Test Achievement', 'server_achievement_description' => 'Test Achievement', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 1000],
+        ['server_achievement_title' => 'Test Achievement', 'server_achievement_description' => 'Test Achievement', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 1000],
+        ['server_achievement_title' => 'Test Achievement', 'server_achievement_description' => 'Test Achievement', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 1000],
+        ['server_achievement_title' => 'Test Achievement', 'server_achievement_description' => 'Test Achievement', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 1000],
+    ],
+
+    'server-mission' => [
+        ['server_mission_title' => 'Test Mission', 'server_mission_description' => 'Test Mission', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 1000],
+        ['server_mission_title' => 'Test Mission', 'server_mission_description' => 'Test Mission', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 1000],
+        ['server_mission_title' => 'Test Mission', 'server_mission_description' => 'Test Mission', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 1000],
+        ['server_mission_title' => 'Test Mission', 'server_mission_description' => 'Test Mission', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 1000],
+        ['server_mission_title' => 'Test Mission', 'server_mission_description' => 'Test Mission', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 1000],
     ],
 ];

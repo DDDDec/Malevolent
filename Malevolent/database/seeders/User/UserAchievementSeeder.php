@@ -1,18 +1,18 @@
 <?php
 
-namespace Database\Seeders\Server;
+namespace Database\Seeders\User;
 
-use App\Models\Server\ServerAchievement;
+use App\Models\User\UserAchievement;
 use Illuminate\Database\Seeder;
 
-class ServerAchievementSeeder extends Seeder
+class UserAchievementSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        $achievements = config('malevolent.seeders.server-achievement', []);
+        $achievements = config('malevolent.seeders.achievement', []);
 
         if (empty($achievements)) {
             $this->command->warn('No achievements found in \'config/malevolent/seeder.php\'');
@@ -20,7 +20,7 @@ class ServerAchievementSeeder extends Seeder
         }
 
         foreach ($achievements as $achievement) {
-            ServerAchievement::create($achievement);
+            UserAchievement::create($achievement);
         }
     }
 }

@@ -8,7 +8,9 @@ use Database\Seeders\Server\ServerLeaderboardSeeder;
 use Database\Seeders\Server\ServerMissionSeeder;
 use Database\Seeders\Server\ServerSeeder;
 use Database\Seeders\Server\ServerVaultSeeder;
+use Database\Seeders\User\UserAchievementSeeder;
 use Database\Seeders\User\UserActionSeeder;
+use Database\Seeders\User\UserMissionSeeder;
 use Database\Seeders\User\UserPlutoniumSeeder;
 use Database\Seeders\User\UserSeeder;
 
@@ -27,6 +29,8 @@ class DatabaseSeeder extends Seeder
         $this->call([
             UserSeeder::class,
             UserPlutoniumSeeder::class,
+            UserAchievementSeeder::class,
+            UserMissionSeeder::class,
             UserActionSeeder::class,
             ServerAchievementSeeder::class,
             ServerSeeder::class,
