@@ -1,20 +1,19 @@
 <?php
 
-namespace App\Models\User;
+namespace App\Models\Server;
 
 use Illuminate\Database\Eloquent\Model;
 
-class UserPlutonium extends Model
+class ServerVault extends Model
 {
-    protected $table = 'user_plutonium';
-
     /**
      * The attributes that are mass assignable.
      *
      * @var list<string>
      */
     protected $fillable = [
-        'plutonium_id',
-        'plutonium_name',
+        'id',
+        'server_ip',
+        'server_port',
     ];
 }

@@ -58,5 +58,13 @@ return [
         ['server_id' => 6, 'server_map' => 'Farm', 'server_round' => 1, 'server_players' => 'Dec', 'server_player_count' => 1, 'server_time' => 1],
         ['server_id' => 7, 'server_map' => 'Tranzit', 'server_round' => 1, 'server_players' => 'Dec', 'server_player_count' => 1, 'server_time' => 1],
         ['server_id' => 8, 'server_map' => 'Die Rise', 'server_round' => 1, 'server_players' => 'Dec', 'server_player_count' => 1, 'server_time' => 1]
-    ]
+    ],
+
+    'server-vault' => [
+        ['id' => 1000, 'vault_money'],
+        ['id' => 2000, 'vault_money'],
+        ['id' => 3000, 'vault_money'],
+        ['id' => 4000, 'vault_money'],
+        ['id' => 5000, 'vault_money'],
+    ],
 ];

@@ -13,9 +13,9 @@ class ServerAction extends Model
      * @var list<string>
      */
     protected $fillable = [
-        'user_id',
-        'user_name',
-        'user_action',
+        'server_id',
+        'server_map',
+        'server_action',
     ];
 
     public function server(): BelongsTo

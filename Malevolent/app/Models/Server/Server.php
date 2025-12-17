@@ -22,6 +22,10 @@ class Server extends Model
         'server_players_max',
         'server_password',
         'server_maintenance',
+        'server_kills',
+        'server_downs',
+        'server_revives',
+        'server_headshots',
     ];
 
     public function actions(): HasMany
