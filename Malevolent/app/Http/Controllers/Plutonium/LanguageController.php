@@ -22,7 +22,7 @@ class LanguageController extends Controller
 
         if ($request->input('language_type') == 'EventAutoMessage') {
             $message = config('malevolent.languages.' . $request->input('language') . '.' . $request->input('language_type'));
-            $messageCount = $message->count();
+            $messageCount = count($message) - 1;
             return $message[random_int(0, $messageCount)];
         }
 

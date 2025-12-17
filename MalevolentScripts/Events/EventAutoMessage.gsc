@@ -20,7 +20,7 @@
 // Sends a message to everyone every x seconds //
 /////////////////////////////////////////////////
 event_auto_message() {
-    level waittill("end_game");
+    level endon("end_game");
 
     while (true) {
         players = getPlayers();
@@ -37,6 +37,6 @@ event_auto_message() {
             }
         }
 
-        wait 300;
+        wait 10;
     }
 }
