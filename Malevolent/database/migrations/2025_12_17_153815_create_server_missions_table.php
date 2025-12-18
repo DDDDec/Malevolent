@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('server_mission_description');
             $table->string('server_mission_statistic');
             $table->unsignedBigInteger('server_mission_statistic_amount');
+            $table->enum('server_missions_type', ['daily', 'weekly', 'bi-weekly', 'monthly'])->default('daily');
             $table->timestamps();
         });
     }
