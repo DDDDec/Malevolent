@@ -13,16 +13,26 @@
                         {{ $achievement['server_achievement_description'] }}
                     </div>
                 </div>
-                @if($claimed)
-                    <button class="border-radius-three width-100-percent background-color-five border-none font-color font-weight-six-hundred padding-twelve" disabled>
-                        Claimed
-                    </button>
-                @elseif($userStat >= $max)
-                    <button wire:click="claimAchievement({{ $achievement['id'] }})" class="border-radius-three width-100-percent background-color-five border-none font-color font-weight-six-hundred padding-twelve">
-                        Claim
-                    </button>
+                @if(Auth()->User()->name == $user->name)
+                    @if($claimed)
+                        <button class="border-radius-three width-100-percent background-color-five border-none font-color font-weight-six-hundred padding-twelve" disabled>
+                            Claimed
+                        </button>
+                    @elseif($userStat >= $max)
+                        <button wire:click="claimAchievement({{ $achievement['id'] }})" class="border-radius-three width-100-percent background-color-five border-none font-color font-weight-six-hundred padding-twelve">
+                            Claim
+                        </button>
+                    @else
+                        <progress class="border-radius width-100-percent" value="{{ $userStat }}" max="{{ $max }}"></progress>
+                    @endif
                 @else
-                    <progress class="border-radius width-100-percent" value="{{ $userStat }}" max="{{ $max }}"></progress>
+                    @if($userStat >= $max)
+                        <button class="border-radius-three width-100-percent background-color-five border-none font-color font-weight-six-hundred padding-twelve">
+                            Completed
+                        </button>
+                    @else
+                        <progress class="border-radius width-100-percent" value="{{ $userStat }}" max="{{ $max }}"></progress>
+                    @endif
                 @endif
             </div>
         @endforeach
