@@ -62,6 +62,11 @@ class Achievements extends Component
                 'achievement_id' => $achievement->id,
                 'user_id'        => $this->user->id,
             ]);
+
+            $this->user->increment(
+                'user_money',
+                $achievement->server_achievement_reward
+            );
         }
     }
 
