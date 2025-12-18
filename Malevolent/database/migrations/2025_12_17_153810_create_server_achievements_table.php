@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('server_achievement_description');
             $table->string('server_achievement_statistic');
             $table->unsignedBigInteger('server_achievement_statistic_amount');
+            $table->unsignedBigInteger('server_achievement_reward');
             $table->timestamps();
         });
     }

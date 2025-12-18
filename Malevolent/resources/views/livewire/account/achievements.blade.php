@@ -6,7 +6,6 @@
                 $userStat = $user->getStatistic($achievement['server_achievement_statistic']);
                 $max = $achievement['server_achievement_statistic_amount'];
             @endphp
-
             <div class="padding-seven background-color-six border-radius border">
                 <div class="font-color font-weight-six-hundred">
                     {{ $achievement['server_achievement_title'] }}
@@ -14,7 +13,6 @@
                         {{ $achievement['server_achievement_description'] }}
                     </div>
                 </div>
-
                 @if($claimed)
                     <button class="border-radius-three width-100-percent background-color-five border-none font-color font-weight-six-hundred padding-twelve" disabled>
                         Claimed

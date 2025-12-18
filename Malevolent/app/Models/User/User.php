@@ -104,10 +104,10 @@ class User extends Authenticatable
         return $this->hasMany(UserAchievement::class);
     }
 
-    public function hasAchievement(int $achievementId): bool
+    public function hasAchievement(int $achievement)
     {
         return $this->achievements()
-            ->where('achievement_id', $achievementId)
+            ->where('achievement_id', $achievement)
             ->exists();
     }
 

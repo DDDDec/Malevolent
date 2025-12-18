@@ -69,17 +69,17 @@ return [
     ],
 
     'server-achievement' => [
-        ['server_achievement_title' => 'Kill 1k zombies', 'server_achievement_description' => 'Kill 1k zombies', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 1000],
-        ['server_achievement_title' => 'Kill 10k zombies', 'server_achievement_description' => 'Kill 10k zombies', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 10000],
-        ['server_achievement_title' => 'Kill 100k zombies', 'server_achievement_description' => 'Kill 100k zombies', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 100000],
-        ['server_achievement_title' => 'Kill 500k zombies', 'server_achievement_description' => 'Kill 500k zombies', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 500000],
-        ['server_achievement_title' => 'Kill 1m zombies', 'server_achievement_description' => 'Kill 1m zombies', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 1000000],
+        ['server_achievement_title' => 'Kill 1k zombies', 'server_achievement_description' => 'Kill 1k zombies', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 1000, 'server_achievement_reward' => 1000],
+        ['server_achievement_title' => 'Kill 10k zombies', 'server_achievement_description' => 'Kill 10k zombies', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 10000, 'server_achievement_reward' => 10000],
+        ['server_achievement_title' => 'Kill 100k zombies', 'server_achievement_description' => 'Kill 100k zombies', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 100000, 'server_achievement_reward' => 100000],
+        ['server_achievement_title' => 'Kill 500k zombies', 'server_achievement_description' => 'Kill 500k zombies', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 500000, 'server_achievement_reward' => 500000],
+        ['server_achievement_title' => 'Kill 1m zombies', 'server_achievement_description' => 'Kill 1m zombies', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 1000000, 'server_achievement_reward' => 1000000],
     ],
 
     'server-mission' => [
-        ['server_mission_title' => 'Kill 10 zombies', 'server_mission_description' => 'Kill 10 zombies', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 10, 'server_missions_type' => 'daily'],
-        ['server_mission_title' => 'Kill 100 zombies', 'server_mission_description' => 'Kill 100 zombies', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 100, 'server_missions_type' => 'weekly'],
-        ['server_mission_title' => 'Kill 1k zombies', 'server_mission_description' => 'Kill 1k zombies', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 1000, 'server_missions_type' => 'bi-weekly'],
-        ['server_mission_title' => 'Kill 10k zombies', 'server_mission_description' => 'Kill 10k zombies', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 10000, 'server_missions_type' => 'monthly'],
+        ['server_mission_title' => 'Kill 10 zombies', 'server_mission_description' => 'Kill 10 zombies', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 10, 'server_missions_type' => 'daily', 'server_mission_reward' => 10],
+        ['server_mission_title' => 'Kill 100 zombies', 'server_mission_description' => 'Kill 100 zombies', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 100, 'server_missions_type' => 'weekly', 'server_mission_reward' => 100],
+        ['server_mission_title' => 'Kill 1k zombies', 'server_mission_description' => 'Kill 1k zombies', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 1000, 'server_missions_type' => 'bi-weekly', 'server_mission_reward' => 1000],
+        ['server_mission_title' => 'Kill 10k zombies', 'server_mission_description' => 'Kill 10k zombies', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 10000, 'server_missions_type' => 'monthly', 'server_mission_reward' => 10000],
     ],
 ];
