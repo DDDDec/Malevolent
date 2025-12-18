@@ -13,16 +13,16 @@ return new class extends Migration
     {
         Schema::create('user_missions', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained('server_missions')->cascadeOnDelete();
-            $table->string('user_mission_title');
-            $table->string('user_mission_description');
-            $table->string('user_mission_statistic');
-            $table->unsignedBigInteger('user_mission_statistic_amount');
-            $table->unsignedBigInteger('user_mission_statistic_amount_start');
-            $table->unsignedBigInteger('user_mission_reward');
-            $table->enum('user_missions_type', ['daily', 'weekly', 'bi-weekly', 'monthly'])->default('daily');
-            $table->boolean('user_mission_claimed')->default(false);
-            $table->timestamp('user_mission_expires_at')->nullable();
+            $table->unsignedBigInteger('mission_id');
+            $table->unsignedBigInteger('user_id');
+            $table->string('mission_name');
+            $table->string('mission_statistic');
+            $table->integer('mission_statistic_amount')->default(0);
+            $table->integer('mission_statistic_progress')->default(0);
+            $table->integer('mission_reward')->default(0);
+            $table->boolean('mission_completed')->default(false);
+            $table->enum('mission_type', ['daily', 'weekly', 'biweekly', 'monthly'])->default('daily');
+            $table->dateTime('reset_at');
             $table->timestamps();
         });
     }

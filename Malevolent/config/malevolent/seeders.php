@@ -77,9 +77,9 @@ return [
     ],
 
     'server-mission' => [
-        ['server_mission_title' => 'Kill 10 zombies', 'server_mission_description' => 'Kill 10 zombies', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 10, 'server_missions_type' => 'daily', 'server_mission_reward' => 10],
-        ['server_mission_title' => 'Kill 100 zombies', 'server_mission_description' => 'Kill 100 zombies', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 100, 'server_missions_type' => 'weekly', 'server_mission_reward' => 100],
-        ['server_mission_title' => 'Kill 1k zombies', 'server_mission_description' => 'Kill 1k zombies', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 1000, 'server_missions_type' => 'bi-weekly', 'server_mission_reward' => 1000],
-        ['server_mission_title' => 'Kill 10k zombies', 'server_mission_description' => 'Kill 10k zombies', 'server_mission_statistic' => 'user_kills', 'server_mission_statistic_amount' => 10000, 'server_missions_type' => 'monthly', 'server_mission_reward' => 10000],
+        ['mission_name' => 'Kill 10 zombies', 'mission_description' => 'Kill 10 zombies', 'mission_statistic_name' => 'user_kills', 'mission_amount' => 10, 'mission_type' => 'daily', 'mission_reward' => 10],
+        ['mission_name' => 'Kill 100 zombies', 'mission_description' => 'Kill 100 zombies', 'mission_statistic_name' => 'user_kills', 'mission_amount' => 100, 'mission_type' => 'weekly', 'mission_reward' => 100],
+        ['mission_name' => 'Kill 1k zombies', 'mission_description' => 'Kill 1k zombies', 'mission_statistic_name' => 'user_kills', 'mission_amount' => 1000, 'mission_type' => 'biweekly', 'mission_reward' => 1000],
+        ['mission_name' => 'Kill 10k zombies', 'mission_description' => 'Kill 10k zombies', 'mission_statistic_name' => 'user_kills', 'mission_amount' => 10000, 'mission_type' => 'monthly', 'mission_reward' => 10000],
     ],
 ];

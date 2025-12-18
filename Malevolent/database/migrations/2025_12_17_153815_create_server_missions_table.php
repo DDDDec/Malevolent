@@ -13,12 +13,12 @@ return new class extends Migration
     {
         Schema::create('server_missions', function (Blueprint $table) {
             $table->id();
-            $table->string('server_mission_title');
-            $table->string('server_mission_description');
-            $table->string('server_mission_statistic');
-            $table->unsignedBigInteger('server_mission_statistic_amount');
-            $table->unsignedBigInteger('server_mission_reward');
-            $table->enum('server_missions_type', ['daily', 'weekly', 'bi-weekly', 'monthly'])->default('daily');
+            $table->string('mission_name');
+            $table->string('mission_description');
+            $table->string('mission_statistic_name');
+            $table->integer('mission_reward')->default(0);
+            $table->integer('mission_amount')->default(0);
+            $table->enum('mission_type', ['daily', 'weekly', 'biweekly', 'monthly'])->default('daily');
             $table->timestamps();
         });
     }

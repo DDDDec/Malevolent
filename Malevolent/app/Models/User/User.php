@@ -111,8 +111,8 @@ class User extends Authenticatable
             ->exists();
     }
 
-    public function getStatistic(string $statistic): int
+    public function getStatistic(string $stat): int
     {
-        return (int) ($this->{$statistic} ?? 0);
+        return (int) ($this->{$stat} ?? 0);
     }
 }
