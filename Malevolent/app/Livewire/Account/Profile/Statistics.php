@@ -1,8 +1,7 @@
 <?php
 
-namespace App\Livewire\Account;
+namespace App\Livewire\Account\Profile;
 
-use App\Models\User\User;
 use Livewire\Component;
 
 class Statistics extends Component
@@ -26,6 +25,6 @@ class Statistics extends Component
 
     public function render()
     {
-        return view('livewire.account.statistics');
+        return view('livewire.account.profile.statistics');
     }
 }

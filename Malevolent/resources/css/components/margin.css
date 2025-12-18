@@ -8,6 +8,16 @@
 .margin-top {
     margin-top: 25px;
 }
+.margin-top-two {
+    margin-top: 5px;
+}
+.margin-top-three {
+    margin-top: 15px;
+}
+.margin-top-four {
+    margin-top: 2px;
+}
+
 .margin-minus-top {
     margin-top: -4px;
 }
@@ -32,13 +42,6 @@
 }
 .margin-minus-left {
     margin-left: -10px;
-}
-
-.margin-top-two {
-    margin-top: 5px;
-}
-.margin-top-three {
-    margin-top: 15px;
 }
 
 .margin-bottom {

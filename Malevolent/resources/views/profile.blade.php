@@ -21,15 +21,14 @@
             <div class="grid grid-two-columns-three-fr-one-fr grid-gap-two">
                 <div>
 
-                    <livewire:account.avatar :user="$user"/>
-                    <livewire:account.missions :user="$user"/>
-                    <livewire:account.achievements :user="$user"/>
+                    <livewire:account.profile.avatar :user="$user"/>
+                    <livewire:account.profile.achievements :user="$user"/>
 
                 </div>
                 <div>
 
-                    <livewire:account.statistics :user="$user"/>
-                    <livewire:account.user-activity :user="$user"/>
+                    <livewire:account.profile.statistics :user="$user"/>
+                    <livewire:account.profile.user-activity :user="$user"/>
 
                 </div>
             </div>

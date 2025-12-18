@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\Account;
+namespace App\Livewire\Account\Profile;
 
 use App\Models\Server\ServerAchievement;
 use App\Models\User\User;
@@ -72,6 +72,6 @@ class Achievements extends Component
 
     public function render()
     {
-        return view('livewire.account.achievements');
+        return view('livewire.account.profile.achievements');
     }
 }

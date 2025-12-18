@@ -30,12 +30,10 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             UserPlutoniumSeeder::class,
             UserAchievementSeeder::class,
-            UserMissionSeeder::class,
             UserActionSeeder::class,
             ServerAchievementSeeder::class,
             ServerSeeder::class,
             ServerLeaderboardSeeder::class,
-            ServerMissionSeeder::class,
             ServerActionSeeder::class,
             ServerVaultSeeder::class,
         ]);

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\Account;
+namespace App\Livewire\Account\Profile;
 
 use App\Models\User\User;
 use Livewire\Attributes\Locked;
@@ -41,6 +41,6 @@ class Avatar extends Component
 
     public function render()
     {
-        return view('livewire.account.avatar');
+        return view('livewire.account.profile.avatar');
     }
 }
