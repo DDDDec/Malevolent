@@ -1,8 +1,8 @@
 <div class="border border-radius padding-two font-color-three font-size">
     By logging into your account, you confirm that you have read and agree to our
-    <a href="#" target="_blank" rel="noopener noreferrer" class="link transition">Terms of Service</a>
+    <a href="#" rel="noopener noreferrer" class="link transition">Terms of Service</a>
     and
-    <a href="#" target="_blank" rel="noopener noreferrer" class="link transition">Privacy Policy</a>.
+    <a href="#" rel="noopener noreferrer" class="link transition">Privacy Policy</a>.
     You acknowledge that your account details may be used to provide and improve
     our services, prevent fraud, and ensure a secure gaming experience. You also
     understand that violation of our rules may result in suspension or termination

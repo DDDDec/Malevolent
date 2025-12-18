@@ -13,7 +13,7 @@
                         {{ $achievement['server_achievement_description'] }}
                     </div>
                 </div>
-                @if(Auth()->User()->name == $user->name)
+                @if(Auth::check() && Auth::user()->name == $user->name)
                     @if($claimed)
                         <button class="border-radius-three width-100-percent background-color-five border-none font-color font-weight-six-hundred padding-twelve" disabled>
                             Claimed

@@ -23,15 +23,6 @@
                             <i class="fa-solid fa-atom"></i>
                             &nbsp;&nbsp;Download Client
                         </a>
-                        <div class="border"></div>
-                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Terms Of Service') }}" wire:navigate>
-                            <i class="fa-solid fa-scroll"></i>
-                            &nbsp;&nbsp;Terms Of Service
-                        </a>
-                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Privacy Policy') }}" wire:navigate>
-                            <i class="fa-solid fa-scroll"></i>
-                            &nbsp;&nbsp;Privacy Policy
-                        </a>
                     </div>
                 </li>
 
@@ -64,29 +55,6 @@
 
                 <li class="list">
                     <a class="link transition font-weight-six-hundred padding-three border-radius">
-                        Support &nbsp;
-                        <i class="fa-solid fa-angle-up transition"></i>
-                    </a>
-
-                    <div class="background-color-three display-none border-two border-radius position-absolute overflow-hidden">
-                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Support Tickets') }}" wire:navigate>
-                            <i class="fa-solid fa-ticket"></i>
-                            &nbsp;&nbsp;Support Tickets
-                        </a>
-                        <div class="border"></div>
-                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Command Booklet') }}" wire:navigate>
-                            <i class="fa-solid fa-book"></i>
-                            &nbsp;&nbsp;Commands Booklet
-                        </a>
-                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Server Guides') }}" wire:navigate>
-                            <i class="fa-solid fa-map-location-dot"></i>
-                            &nbsp;&nbsp;Server Guides
-                        </a>
-                    </div>
-                </li>
-
-                <li class="list">
-                    <a class="link transition font-weight-six-hundred padding-three border-radius">
                         Store &nbsp;
                         <i class="fa-solid fa-angle-up transition"></i>
                     </a>
@@ -99,11 +67,6 @@
                         <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Username Colors') }}" wire:navigate>
                             <i class="fa-solid fa-droplet"></i>
                             &nbsp;&nbsp;Username Colors
-                        </a>
-                        <div class="border"></div>
-                        <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Refunds Policy') }}" wire:navigate>
-                            <i class="fa-solid fa-scroll"></i>
-                            &nbsp;&nbsp;Refund Policy
                         </a>
                     </div>
                 </li>

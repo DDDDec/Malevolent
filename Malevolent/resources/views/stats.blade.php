@@ -21,7 +21,7 @@
             <div class="grid grid-two-columns-three-fr-one-fr grid-gap-two">
                 <div>
 
-                    <livewire:community.round-leaderboard/>
+                    <livewire:community.stats-leaderboard/>
 
                 </div>
                 <div>
