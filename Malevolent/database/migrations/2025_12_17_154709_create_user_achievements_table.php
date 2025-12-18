@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('user_achievements', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
+            $table->foreignId('achievement_id')->constrained('server_achievements')->cascadeOnDelete();
+            $table->unique(['achievement_id', 'user_id']);
             $table->timestamps();
         });
     }

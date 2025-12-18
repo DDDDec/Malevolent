@@ -69,11 +69,11 @@ return [
     ],
 
     'server-achievement' => [
-        ['server_achievement_title' => 'Kill 10 zombies', 'server_achievement_description' => 'Kill 10 zombies', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 1000],
-        ['server_achievement_title' => 'Kill 100 zombies', 'server_achievement_description' => 'Kill 100 zombies', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 1000],
         ['server_achievement_title' => 'Kill 1k zombies', 'server_achievement_description' => 'Kill 1k zombies', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 1000],
-        ['server_achievement_title' => 'Kill 10k zombies', 'server_achievement_description' => 'Kill 10k zombies', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 1000],
-        ['server_achievement_title' => 'Kill 100k zombies', 'server_achievement_description' => 'Kill 100k zombies', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 1000],
+        ['server_achievement_title' => 'Kill 10k zombies', 'server_achievement_description' => 'Kill 10k zombies', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 10000],
+        ['server_achievement_title' => 'Kill 100k zombies', 'server_achievement_description' => 'Kill 100k zombies', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 100000],
+        ['server_achievement_title' => 'Kill 500k zombies', 'server_achievement_description' => 'Kill 500k zombies', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 500000],
+        ['server_achievement_title' => 'Kill 1m zombies', 'server_achievement_description' => 'Kill 1m zombies', 'server_achievement_statistic' => 'user_kills', 'server_achievement_statistic_amount' => 1000000],
     ],
 
     'server-mission' => [

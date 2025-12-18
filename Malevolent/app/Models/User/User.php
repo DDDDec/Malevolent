@@ -98,4 +98,21 @@ class User extends Authenticatable
     {
         return $this->hasMany(UserAction::class);
     }
+
+    public function achievements(): HasMany
+    {
+        return $this->hasMany(UserAchievement::class);
+    }
+
+    public function hasAchievement(int $achievementId): bool
+    {
+        return $this->achievements()
+            ->where('achievement_id', $achievementId)
+            ->exists();
+    }
+
+    public function getStatistic(string $statistic): int
+    {
+        return (int) ($this->{$statistic} ?? 0);
+    }
 }
