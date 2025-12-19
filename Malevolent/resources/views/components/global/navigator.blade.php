@@ -43,7 +43,7 @@
                         </a>
                         <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Server Leaderboards') }}" wire:navigate>
                             <i class="fa-solid fa-chart-simple"></i>
-                            &nbsp;&nbsp;Server Leaderboard
+                            &nbsp;&nbsp;Map Leaderboard
                         </a>
                         <div class="border"></div>
                         <a class="display-none link-two transition font-weight-six-hundred padding-four font-size-two font-color-three" href="{{ route('Search') }}" wire:navigate>
