@@ -12,7 +12,7 @@
             <div class="padding-seven background-color-six border-radius border {{ !$loop->first ? 'margin-top-three' : '' }}">
                 <div class="width-100-percent grid grid-custom">
                     <div class="width-fit-content background-color-five padding-two border-radius display-inline-block font-color font-weight-six-hundred">
-                        <i class="fa-solid fa-arrow-up-1-9"></i>
+                        <i class="fa-solid fa-server"></i>
                     </div>
                     <div class="font-color font-weight-six-hundred margin-top-three">
                         Map
