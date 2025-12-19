@@ -31,23 +31,25 @@ class Achievements extends Component
     private function loadAchievements(): void
     {
         $this->achievements = Cache::remember(
-            'profile.achievements'.$this->user->name,
+            'profile.achievements.all',
             300,
             fn () => ServerAchievement::all()
         );
 
-        $this->userAchievements = $this->user
-            ->achievements()
-            ->pluck('achievement_id');
+        $this->userAchievements = Cache::remember(
+            'profile.user_achievements.'.$this->user->id,
+            300,
+            fn () => $this->user->achievements()->pluck('achievement_id')
+        );
     }
 
     public function claimAchievement($achievementId): void
     {
-        if ($this->user->hasAchievement($achievementId)) {
+        if ($this->userAchievements->contains($achievementId)) {
             return;
         }
 
-        $achievement = ServerAchievement::find($achievementId);
+        $achievement = $this->achievements->firstWhere('id', $achievementId);
 
         if (! $achievement) {
             return;
@@ -67,6 +69,10 @@ class Achievements extends Component
                 'user_money',
                 $achievement->server_achievement_reward
             );
+
+            Cache::forget("profile.user_achievements.{$this->user->id}");
+            Cache::forget("profile.user.avatar.{$this->user->id}");
+            $this->loadAchievements();
         }
     }
 

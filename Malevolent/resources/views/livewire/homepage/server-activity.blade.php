@@ -1,4 +1,4 @@
-<div class="border padding-two box-sizing-border-box border-radius margin-top grid grid-one-column grid-gap" wire:poll.visible="poll">
+<div class="border padding-two box-sizing-border-box border-radius grid grid-one-column grid-gap margin-top" wire:poll.visible="poll">
     @foreach($serverActions as $action)
         <div class="padding-seven background-color-six border-radius border {{ in_array($action['id'], $newActionIds) ? 'activity-slide-in' : '' }}" wire:key="server-activity-{{ $action['id'] }}">
             <div class="font-color font-weight-six-hundred margin-top-two">

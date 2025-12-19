@@ -28,9 +28,11 @@ class UserActivity extends Component
 
     private function loadUserActivity(): void
     {
-        $this->userActivity = Cache::remember('profile.user.activity'.$this->user->name, 300, function () {
-            return UserAction::where('user_name', $this->user->name)->orderBy('created_at', 'desc')->limit(5)->get()->toArray();
-        });
+        $this->userActivity = Cache::remember(
+            "profile.user.activity.{$this->user->id}",
+            300,
+            fn () => UserAction::where('user_name', $this->user->name)->latest()->limit(5)->get()->toArray()
+        );
     }
 
     public function render()

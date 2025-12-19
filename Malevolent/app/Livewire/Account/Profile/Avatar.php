@@ -3,6 +3,7 @@
 namespace App\Livewire\Account\Profile;
 
 use App\Models\User\User;
+use Illuminate\Support\Facades\Cache;
 use Livewire\Attributes\Locked;
 use Livewire\Component;
 
@@ -26,17 +27,19 @@ class Avatar extends Component
 
     private function loadAvatar(): void
     {
-        $this->avatar = [
-            'Username' => $this->user->name,
-            'Rank' => $this->user->user_rank,
-            'Joined' => $this->user->format_created_at,
-            'GUID' => $this->user->id,
-            'Prestige' => $this->user->user_prestige,
-            'Last Played' => $this->user->format_created_at,
-            'Bank Balance' => $this->user->format_money,
-            'Level' => $this->user->format_level,
-            'Status' => $this->user->format_banned,
-        ];
+        $this->avatar = Cache::remember("profile.user.avatar.{$this->user->id}", 300, function() {
+            return [
+                'Username' => $this->user->name,
+                'Rank' => $this->user->user_rank,
+                'Joined' => $this->user->format_created_at,
+                'GUID' => $this->user->id,
+                'Prestige' => $this->user->user_prestige,
+                'Last Played' => $this->user->format_created_at,
+                'Bank Balance' => $this->user->format_money,
+                'Level' => $this->user->format_level,
+                'Status' => $this->user->format_banned,
+            ];
+        });
     }
 
     public function render()
