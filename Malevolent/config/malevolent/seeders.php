@@ -15,22 +15,14 @@ return [
     ],
 
     'server' => [
-        ['server_ip' => '127.0.0.1', 'server_port' => '4977'],
-        ['server_ip' => '127.0.0.1', 'server_port' => '4978'],
-        ['server_ip' => '127.0.0.1', 'server_port' => '4979'],
-        ['server_ip' => '127.0.0.1', 'server_port' => '4980'],
-        ['server_ip' => '127.0.0.1', 'server_port' => '4981'],
-        ['server_ip' => '127.0.0.1', 'server_port' => '4982'],
-        ['server_ip' => '127.0.0.1', 'server_port' => '4983'],
-        ['server_ip' => '127.0.0.1', 'server_port' => '4984'],
-        ['server_ip' => '127.0.0.1', 'server_port' => '4985'],
-        ['server_ip' => '127.0.0.1', 'server_port' => '4986'],
-        ['server_ip' => '127.0.0.1', 'server_port' => '4987'],
-        ['server_ip' => '127.0.0.1', 'server_port' => '4988'],
-        ['server_ip' => '127.0.0.1', 'server_port' => '4989'],
-        ['server_ip' => '127.0.0.1', 'server_port' => '4990'],
-        ['server_ip' => '127.0.0.1', 'server_port' => '4991'],
-        ['server_ip' => '127.0.0.1', 'server_port' => '4992']
+        ['server_ip' => '127.0.0.1', 'server_port' => '4977', 'server_map' => 'Tranzit'],
+        ['server_ip' => '127.0.0.1', 'server_port' => '4978', 'server_map' => 'Depot'],
+        ['server_ip' => '127.0.0.1', 'server_port' => '4979', 'server_map' => 'Town'],
+        ['server_ip' => '127.0.0.1', 'server_port' => '4980', 'server_map' => 'Farm'],
+        ['server_ip' => '127.0.0.1', 'server_port' => '4981', 'server_map' => 'Origins'],
+        ['server_ip' => '127.0.0.1', 'server_port' => '4982', 'server_map' => 'Buried'],
+        ['server_ip' => '127.0.0.1', 'server_port' => '4983', 'server_map' => 'Nuketown'],
+        ['server_ip' => '127.0.0.1', 'server_port' => '4984', 'server_map' => 'Die Rise'],
     ],
 
     'user-action' => [
